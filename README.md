@@ -7,8 +7,8 @@ The brands differ in more than colour. Each has its own palette, type, spacing, 
 | Brand | Character |
 |---|---|
 | Brand 1 | Light, restrained. White canvas, near-black type, cool greys, indigo accent. Square controls. |
-| Brand 2 | Warm and bold. Warm neutrals, yellow action colour, condensed display type. Light only. |
-| Brand 3 | Technical. Cyan and purple accents, Space Grotesk. Light by default, with a dark mode (deep blue-black canvas, cyan glow). |
+| Brand 2 | Warm and bold. Warm neutrals, yellow action colour, condensed display type. |
+| Brand 3 | Dark and technical. Deep blue-black canvas, cyan glow accents, Space Grotesk. Dark by default, with a light mode. |
 
 ## Repository layout
 
@@ -16,7 +16,7 @@ The brands differ in more than colour. Each has its own palette, type, spacing, 
 packages/design-system/     Tokens, build script, components, Storybook
   tokens/
     primitives/             Raw values: global scales + one file per brand
-    semantic/               Purpose-based tokens, one file per brand (+ brand-3-dark overrides)
+    semantic/               Purpose-based tokens, one file per brand (+ brand-3-light overrides)
     component/              Component tokens (button, input, card, ...)
   build-tokens.mjs          Style Dictionary build -> build/css/
 apps/website/               Case study site
@@ -43,13 +43,13 @@ The build outputs one CSS file per brand, scoped to an attribute:
 
 All brand files load together, and the attribute decides which one applies.
 
-Brand 3 also has a dark mode, which is applied on top of its light base:
+Brand 3 is dark by default and also has a light mode, applied on top of its dark base:
 
 ```html
-<html data-brand="3" data-theme="dark">
+<html data-brand="3" data-theme="light">
 ```
 
-`brand-3-dark.json` holds colour and shadow overrides only. Brands 1 and 2 have a single light theme.
+`brand-3-light.json` holds colour and shadow overrides only. Brands 1 and 2 have one theme each.
 
 ## Getting started
 

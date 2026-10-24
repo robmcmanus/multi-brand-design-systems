@@ -153,11 +153,11 @@ All brand CSS files are loaded simultaneously. The `data-brand` attribute determ
 | | Brand 1 | Brand 2 | Brand 3 |
 |---|---|---|---|
 | **Archetype** | Portfolio / Folio site | Movie-finding app | Internal tools / sci-fi HUD |
-| **Mode** | Light | Light only | Light default, dark mode |
+| **Mode** | Light | Light | Dark default, light mode |
 | **Accent** | Indigo | Yellow CTA, red accent, blue secondary | Cyan, electric purple secondary |
 | **Type — UI** | Inter | DM Sans | Space Grotesk |
 | **Type — display** | Inter | Barlow Condensed | Space Grotesk |
 | **Type — mono** | JetBrains Mono | DM Mono | JetBrains Mono |
 | **Control radius** | Square (0px) | 6px | 4px |
 | **Container radius** | 8px | 8px | 4px |
-| **Shadows** | Soft, cool | Soft, warm | Soft in light, cyan glow |
+| **Shadows** | Soft, cool | Soft, warm | Cyan glow in dark, soft in light |

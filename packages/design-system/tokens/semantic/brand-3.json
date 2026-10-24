@@ -1,67 +1,67 @@
 {
-  "$description": "Brand 3 semantic tokens — Internal tools / Sci-fi HUD. Light mode default. Dark mode overrides live in brand-3-dark.json (colour and shadow only). Cyan accent, electric purple secondary, monospace-first.",
+  "$description": "Brand 3 semantic tokens — Internal tools / Sci-fi HUD. Dark mode default. Light mode overrides live in brand-3-light.json (colour and shadow only). Cyan accent, electric purple secondary, monospace-first.",
   "color": {
     "background": {
-      "canvas": { "$value": "{color.void.50}", "$type": "color", "$description": "#F0F5FF — pale blue-white page" },
-      "surface": { "$value": "{color.white}", "$type": "color", "$description": "Cards, panels" },
-      "elevated": { "$value": "{color.white}", "$type": "color", "$description": "Dropdowns, modals" },
-      "overlay": { "$value": "#04081080", "$type": "color", "$description": "Modal scrim" },
-      "emphasis": { "$value": "{color.void.800}", "$type": "color", "$description": "Deep dark emphasis block" },
-      "subtle": { "$value": "{color.void.100}", "$type": "color", "$description": "Hover fill, subtle highlight" }
+      "canvas": { "$value": "{color.void.800}", "$type": "color", "$description": "#091019 — deep space dark" },
+      "surface": { "$value": "{color.void.700}", "$type": "color", "$description": "#0D1521 — raised surface" },
+      "elevated": { "$value": "{color.slate.800}", "$type": "color", "$description": "#0F1C30 — dropdown, modal" },
+      "overlay": { "$value": "#040810BF", "$type": "color", "$description": "Void scrim" },
+      "emphasis": { "$value": "{color.cyan.glow}", "$type": "color", "$description": "Cyan emphasis — HUD highlight" },
+      "subtle": { "$value": "{color.grid.default-dark}", "$type": "color", "$description": "Faint cyan tint hover" }
     },
     "text": {
-      "primary": { "$value": "{color.void.900}", "$type": "color" },
-      "secondary": { "$value": "{color.slate.500}", "$type": "color" },
+      "primary": { "$value": "{color.void.50}", "$type": "color", "$description": "#F0F5FF — cool white" },
+      "secondary": { "$value": "{color.slate.300}", "$type": "color" },
       "tertiary": { "$value": "{color.slate.400}", "$type": "color" },
-      "disabled": { "$value": "{color.slate.300}", "$type": "color" },
-      "inverse": { "$value": "{color.void.50}", "$type": "color", "$description": "Light text on dark bg" },
-      "on-emphasis": { "$value": "{color.void.50}", "$type": "color" },
-      "link": { "$value": "{color.purple.600}", "$type": "color", "$description": "Purple link: cyan has no shade dark enough for AA text on light" },
-      "link-hover": { "$value": "{color.purple.500}", "$type": "color" },
-      "code": { "$value": "{color.slate.600}", "$type": "color" }
+      "disabled": { "$value": "{color.slate.600}", "$type": "color" },
+      "inverse": { "$value": "{color.void.850}", "$type": "color", "$description": "Dark text on cyan bg" },
+      "on-emphasis": { "$value": "{color.void.850}", "$type": "color" },
+      "link": { "$value": "{color.cyan.300}", "$type": "color" },
+      "link-hover": { "$value": "{color.cyan.glow}", "$type": "color" },
+      "code": { "$value": "{color.cyan.200}", "$type": "color" }
     },
     "border": {
-      "subtle": { "$value": "{color.slate.100}", "$type": "color" },
-      "default": { "$value": "{color.slate.200}", "$type": "color" },
-      "strong": { "$value": "{color.slate.300}", "$type": "color" },
-      "emphasis": { "$value": "{color.cyan.500}", "$type": "color" },
-      "focus": { "$value": "{color.purple.600}", "$type": "color", "$description": "Purple focus ring: meets 3:1 on light surfaces" }
+      "subtle": { "$value": "{color.slate.700}", "$type": "color" },
+      "default": { "$value": "{color.slate.600}", "$type": "color" },
+      "strong": { "$value": "{color.slate.400}", "$type": "color" },
+      "emphasis": { "$value": "{color.cyan.400}", "$type": "color" },
+      "focus": { "$value": "{color.cyan.glow}", "$type": "color" }
     },
     "action": {
-      "background": { "$value": "{color.cyan.500}", "$type": "color" },
-      "background-hover": { "$value": "{color.cyan.400}", "$type": "color" },
-      "background-active": { "$value": "{color.cyan.300}", "$type": "color" },
-      "background-disabled": { "$value": "{color.slate.200}", "$type": "color" },
-      "background-subtle": { "$value": "{color.cyan.50}", "$type": "color" },
-      "foreground": { "$value": "{color.void.900}", "$type": "color", "$description": "Dark label on cyan" },
-      "foreground-disabled": { "$value": "{color.slate.300}", "$type": "color" },
-      "border": { "$value": "{color.cyan.500}", "$type": "color" },
-      "border-hover": { "$value": "{color.cyan.400}", "$type": "color" }
+      "background": { "$value": "{color.cyan.400}", "$type": "color", "$description": "Cyan CTA button" },
+      "background-hover": { "$value": "{color.cyan.glow}", "$type": "color" },
+      "background-active": { "$value": "{color.cyan.500}", "$type": "color" },
+      "background-disabled": { "$value": "{color.slate.700}", "$type": "color" },
+      "background-subtle": { "$value": "#00C4F014", "$type": "color", "$description": "Ghost/secondary fill" },
+      "foreground": { "$value": "{color.void.850}", "$type": "color", "$description": "Dark text on cyan button" },
+      "foreground-disabled": { "$value": "{color.slate.500}", "$type": "color" },
+      "border": { "$value": "{color.cyan.400}", "$type": "color" },
+      "border-hover": { "$value": "{color.cyan.glow}", "$type": "color" }
     },
     "feedback": {
       "success": {
-        "background": { "$value": "#00A3661A", "$type": "color" },
-        "text": { "$value": "{color.success.600}", "$type": "color" },
+        "background": { "$value": "#00F5A014", "$type": "color" },
+        "text": { "$value": "{color.success.400}", "$type": "color" },
         "border": { "$value": "{color.success.500}", "$type": "color" },
-        "icon": { "$value": "{color.success.600}", "$type": "color" }
+        "icon": { "$value": "{color.success.400}", "$type": "color" }
       },
       "warning": {
-        "background": { "$value": "#CC88001A", "$type": "color" },
-        "text": { "$value": "{color.warning.600}", "$type": "color" },
+        "background": { "$value": "#FFAA0014", "$type": "color" },
+        "text": { "$value": "{color.warning.400}", "$type": "color" },
         "border": { "$value": "{color.warning.500}", "$type": "color" },
-        "icon": { "$value": "{color.warning.600}", "$type": "color" }
+        "icon": { "$value": "{color.warning.400}", "$type": "color" }
       },
       "error": {
-        "background": { "$value": "#C400261A", "$type": "color" },
-        "text": { "$value": "{color.error.600}", "$type": "color" },
+        "background": { "$value": "#FF336614", "$type": "color" },
+        "text": { "$value": "{color.error.400}", "$type": "color" },
         "border": { "$value": "{color.error.500}", "$type": "color" },
-        "icon": { "$value": "{color.error.600}", "$type": "color" }
+        "icon": { "$value": "{color.error.400}", "$type": "color" }
       },
       "info": {
-        "background": { "$value": "#7C3AED14", "$type": "color" },
-        "text": { "$value": "{color.purple.600}", "$type": "color" },
+        "background": { "$value": "#8B5CF614", "$type": "color" },
+        "text": { "$value": "{color.purple.300}", "$type": "color" },
         "border": { "$value": "{color.purple.400}", "$type": "color" },
-        "icon": { "$value": "{color.purple.600}", "$type": "color" }
+        "icon": { "$value": "{color.purple.400}", "$type": "color" }
       }
     }
   },
@@ -113,11 +113,11 @@
     "container": { "$value": "{radius.2}", "$type": "dimension", "$description": "4px — corner radius for containers (cards, modals, panels)" }
   },
   "shadow": {
-    "sm": { "$value": "0 1px 4px rgba(4, 8, 16, 0.08)", "$type": "shadow" },
-    "md": { "$value": "0 4px 16px rgba(4, 8, 16, 0.10)", "$type": "shadow" },
-    "lg": { "$value": "0 8px 32px rgba(4, 8, 16, 0.14)", "$type": "shadow" },
-    "glow": { "$value": "0 0 12px rgba(0, 168, 212, 0.25), 0 0 24px rgba(0, 168, 212, 0.10)", "$type": "shadow" },
-    "focus": { "$value": "0 0 0 3px rgba(124, 58, 237, 0.4)", "$type": "shadow", "$description": "Purple focus ring" }
+    "sm": { "$value": "0 1px 4px rgba(0, 0, 0, 0.4)", "$type": "shadow" },
+    "md": { "$value": "0 4px 16px rgba(0, 0, 0, 0.5)", "$type": "shadow" },
+    "lg": { "$value": "0 8px 32px rgba(0, 0, 0, 0.6)", "$type": "shadow" },
+    "glow": { "$value": "0 0 12px rgba(0, 212, 255, 0.3), 0 0 24px rgba(0, 212, 255, 0.12)", "$type": "shadow", "$description": "Cyan glow — HUD active state" },
+    "focus": { "$value": "0 0 0 1px rgba(0, 212, 255, 0.8), 0 0 8px rgba(0, 212, 255, 0.3)", "$type": "shadow", "$description": "Cyan focus — sharp ring + soft glow" }
   },
   "motion": {
     "duration": {

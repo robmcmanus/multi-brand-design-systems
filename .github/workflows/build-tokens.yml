@@ -26,7 +26,7 @@ jobs:
       - name: Check expected CSS files were generated
         working-directory: packages/design-system/build/css
         run: |
-          for f in global.css brand-1.css brand-2.css brand-3.css brand-3-dark.css components.css; do
+          for f in global.css brand-1.css brand-2.css brand-3.css brand-3-light.css components.css; do
             test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
           done
           ls -l

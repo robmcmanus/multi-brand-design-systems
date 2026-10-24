@@ -1,0 +1,75 @@
+{
+  "$description": "Brand 3 light mode overrides — colour and shadow only. Applied with data-brand=\"3\" data-theme=\"light\"; everything else comes from brand-3.json.",
+  "color": {
+    "background": {
+      "canvas": { "$value": "{color.void.50}", "$type": "color", "$description": "#F0F5FF — pale blue-white page" },
+      "surface": { "$value": "{color.white}", "$type": "color", "$description": "Cards, panels" },
+      "elevated": { "$value": "{color.white}", "$type": "color", "$description": "Dropdowns, modals" },
+      "overlay": { "$value": "#04081080", "$type": "color", "$description": "Modal scrim" },
+      "emphasis": { "$value": "{color.void.800}", "$type": "color", "$description": "Deep dark emphasis block" },
+      "subtle": { "$value": "{color.void.100}", "$type": "color", "$description": "Hover fill, subtle highlight" }
+    },
+    "text": {
+      "primary": { "$value": "{color.void.900}", "$type": "color" },
+      "secondary": { "$value": "{color.slate.500}", "$type": "color" },
+      "tertiary": { "$value": "{color.slate.400}", "$type": "color" },
+      "disabled": { "$value": "{color.slate.300}", "$type": "color" },
+      "inverse": { "$value": "{color.void.50}", "$type": "color", "$description": "Light text on dark bg" },
+      "on-emphasis": { "$value": "{color.void.50}", "$type": "color" },
+      "link": { "$value": "{color.purple.600}", "$type": "color", "$description": "Purple link: cyan has no shade dark enough for AA text on light" },
+      "link-hover": { "$value": "{color.purple.500}", "$type": "color" },
+      "code": { "$value": "{color.slate.600}", "$type": "color" }
+    },
+    "border": {
+      "subtle": { "$value": "{color.slate.100}", "$type": "color" },
+      "default": { "$value": "{color.slate.200}", "$type": "color" },
+      "strong": { "$value": "{color.slate.300}", "$type": "color" },
+      "emphasis": { "$value": "{color.cyan.500}", "$type": "color" },
+      "focus": { "$value": "{color.purple.600}", "$type": "color", "$description": "Purple focus ring: meets 3:1 on light surfaces" }
+    },
+    "action": {
+      "background": { "$value": "{color.cyan.500}", "$type": "color" },
+      "background-hover": { "$value": "{color.cyan.400}", "$type": "color" },
+      "background-active": { "$value": "{color.cyan.300}", "$type": "color" },
+      "background-disabled": { "$value": "{color.slate.200}", "$type": "color" },
+      "background-subtle": { "$value": "{color.cyan.50}", "$type": "color" },
+      "foreground": { "$value": "{color.void.900}", "$type": "color", "$description": "Dark label on cyan" },
+      "foreground-disabled": { "$value": "{color.slate.300}", "$type": "color" },
+      "border": { "$value": "{color.cyan.500}", "$type": "color" },
+      "border-hover": { "$value": "{color.cyan.400}", "$type": "color" }
+    },
+    "feedback": {
+      "success": {
+        "background": { "$value": "#00A3661A", "$type": "color" },
+        "text": { "$value": "{color.success.600}", "$type": "color" },
+        "border": { "$value": "{color.success.500}", "$type": "color" },
+        "icon": { "$value": "{color.success.600}", "$type": "color" }
+      },
+      "warning": {
+        "background": { "$value": "#CC88001A", "$type": "color" },
+        "text": { "$value": "{color.warning.600}", "$type": "color" },
+        "border": { "$value": "{color.warning.500}", "$type": "color" },
+        "icon": { "$value": "{color.warning.600}", "$type": "color" }
+      },
+      "error": {
+        "background": { "$value": "#C400261A", "$type": "color" },
+        "text": { "$value": "{color.error.600}", "$type": "color" },
+        "border": { "$value": "{color.error.500}", "$type": "color" },
+        "icon": { "$value": "{color.error.600}", "$type": "color" }
+      },
+      "info": {
+        "background": { "$value": "#7C3AED14", "$type": "color" },
+        "text": { "$value": "{color.purple.600}", "$type": "color" },
+        "border": { "$value": "{color.purple.400}", "$type": "color" },
+        "icon": { "$value": "{color.purple.600}", "$type": "color" }
+      }
+    }
+  },
+  "shadow": {
+    "sm": { "$value": "0 1px 4px rgba(4, 8, 16, 0.08)", "$type": "shadow" },
+    "md": { "$value": "0 4px 16px rgba(4, 8, 16, 0.10)", "$type": "shadow" },
+    "lg": { "$value": "0 8px 32px rgba(4, 8, 16, 0.14)", "$type": "shadow" },
+    "glow": { "$value": "0 0 12px rgba(0, 168, 212, 0.25), 0 0 24px rgba(0, 168, 212, 0.10)", "$type": "shadow" },
+    "focus": { "$value": "0 0 0 3px rgba(124, 58, 237, 0.4)", "$type": "shadow", "$description": "Purple focus ring" }
+  }
+}
