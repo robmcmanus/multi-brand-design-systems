@@ -82,6 +82,10 @@ Storybook is deployed to GitHub Pages on every push to `main`: https://robmcmanu
 
 Run it locally with `npm run storybook --workspace=packages/design-system`.
 
+## Releases
+
+Versions are tagged on `main` and listed in [CHANGELOG.md](CHANGELOG.md).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, token rules and component rules.
