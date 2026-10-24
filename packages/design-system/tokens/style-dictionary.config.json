@@ -1,0 +1,133 @@
+{
+  "$description": "Style Dictionary 4 config. Outputs scoped CSS custom properties per brand, plus shared global and component files. Run: npx style-dictionary build --config tokens/style-dictionary.config.json",
+
+  "log": { "verbosity": "verbose" },
+
+  "platforms": {
+    "css-global": {
+      "transformGroup": "css",
+      "prefix": "ds",
+      "buildPath": "build/css/",
+      "files": [
+        {
+          "destination": "global.css",
+          "format": "css/variables",
+          "filter": {
+            "filePath": "tokens/primitives/global.json"
+          },
+          "options": {
+            "selector": ":root",
+            "outputReferences": false
+          }
+        }
+      ]
+    },
+
+    "css-brand-1": {
+      "transformGroup": "css",
+      "prefix": "ds",
+      "buildPath": "build/css/",
+      "source": [
+        "tokens/primitives/global.json",
+        "tokens/primitives/brand-1.json",
+        "tokens/semantic/brand-1.json"
+      ],
+      "files": [
+        {
+          "destination": "brand-1.css",
+          "format": "css/variables",
+          "filter": {
+            "filePath": "tokens/semantic/brand-1.json"
+          },
+          "options": {
+            "selector": "[data-brand=\"1\"]",
+            "outputReferences": false
+          }
+        }
+      ]
+    },
+
+    "css-brand-2": {
+      "transformGroup": "css",
+      "prefix": "ds",
+      "buildPath": "build/css/",
+      "source": [
+        "tokens/primitives/global.json",
+        "tokens/primitives/brand-2.json",
+        "tokens/semantic/brand-2.json"
+      ],
+      "files": [
+        {
+          "destination": "brand-2.css",
+          "format": "css/variables",
+          "filter": {
+            "filePath": "tokens/semantic/brand-2.json"
+          },
+          "options": {
+            "selector": "[data-brand=\"2\"]",
+            "outputReferences": false
+          }
+        }
+      ]
+    },
+
+    "css-brand-3": {
+      "transformGroup": "css",
+      "prefix": "ds",
+      "buildPath": "build/css/",
+      "source": [
+        "tokens/primitives/global.json",
+        "tokens/primitives/brand-3.json",
+        "tokens/semantic/brand-3.json"
+      ],
+      "files": [
+        {
+          "destination": "brand-3.css",
+          "format": "css/variables",
+          "filter": {
+            "filePath": "tokens/semantic/brand-3.json"
+          },
+          "options": {
+            "selector": "[data-brand=\"3\"]",
+            "outputReferences": false
+          }
+        }
+      ]
+    },
+
+    "css-components": {
+      "transformGroup": "css",
+      "prefix": "ds",
+      "buildPath": "build/css/",
+      "source": [
+        "tokens/primitives/global.json",
+        "tokens/component/*.json"
+      ],
+      "files": [
+        {
+          "destination": "components.css",
+          "format": "css/variables",
+          "filter": {
+            "filePath": { "regex": "tokens/component/" }
+          },
+          "options": {
+            "selector": ":root",
+            "outputReferences": true,
+            "$description": "outputReferences:true keeps var(--ds-...) chains — components reference semantics, semantics resolve per brand"
+          }
+        }
+      ]
+    },
+
+    "json-tokens": {
+      "transformGroup": "js",
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json/nested"
+        }
+      ]
+    }
+  }
+}

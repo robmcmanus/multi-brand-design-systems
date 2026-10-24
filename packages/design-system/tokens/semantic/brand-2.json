@@ -1,0 +1,166 @@
+{
+  "$description": "Brand 2 semantic tokens — Movie-finding app. Light mode default (cream canvas). Dark mode overrides in brand-2-dark.json. Yellow CTA, red accent, blue secondary.",
+
+  "color": {
+    "background": {
+      "canvas":   { "$value": "{color.neutral.50}",  "$type": "color", "$description": "#F5F2EB — cream canvas, light mode" },
+      "surface":  { "$value": "{color.neutral.0}",   "$type": "color", "$description": "White — cards, panels lift off cream" },
+      "elevated": { "$value": "{color.neutral.0}",   "$type": "color", "$description": "White — dropdowns, modals" },
+      "overlay":  { "$value": "#1C1C1C99", "$type": "color" },
+      "emphasis": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Near-black emphasis block" },
+      "subtle":   { "$value": "{color.neutral.100}", "$type": "color" }
+    },
+    "text": {
+      "primary":     { "$value": "{color.neutral.900}", "$type": "color", "$description": "#1C1C1C" },
+      "secondary":   { "$value": "{color.neutral.600}", "$type": "color" },
+      "tertiary":    { "$value": "{color.neutral.400}", "$type": "color" },
+      "disabled":    { "$value": "{color.neutral.300}", "$type": "color" },
+      "inverse":     { "$value": "{color.neutral.50}",  "$type": "color", "$description": "Cream text on dark bg" },
+      "on-emphasis": { "$value": "{color.neutral.50}",  "$type": "color" },
+      "link":        { "$value": "{color.blue.600}",    "$type": "color" },
+      "link-hover":  { "$value": "{color.blue.700}",    "$type": "color" },
+      "code":        { "$value": "{color.neutral.700}", "$type": "color" }
+    },
+    "border": {
+      "subtle":   { "$value": "{color.neutral.100}", "$type": "color" },
+      "default":  { "$value": "{color.neutral.200}", "$type": "color" },
+      "strong":   { "$value": "{color.neutral.400}", "$type": "color" },
+      "emphasis": { "$value": "{color.neutral.900}", "$type": "color" },
+      "focus":    { "$value": "{color.yellow.500}",  "$type": "color" }
+    },
+    "action": {
+      "background":           { "$value": "{color.yellow.500}",  "$type": "color", "$description": "Golden yellow — primary CTA" },
+      "background-hover":     { "$value": "{color.yellow.400}",  "$type": "color" },
+      "background-active":    { "$value": "{color.yellow.600}",  "$type": "color" },
+      "background-disabled":  { "$value": "{color.neutral.200}", "$type": "color" },
+      "background-subtle":    { "$value": "{color.yellow.50}",   "$type": "color", "$description": "Ghost/secondary button fill" },
+      "foreground":           { "$value": "{color.neutral.900}", "$type": "color", "$description": "Near-black text on yellow button" },
+      "foreground-disabled":  { "$value": "{color.neutral.400}", "$type": "color" },
+      "border":               { "$value": "{color.yellow.500}",  "$type": "color" },
+      "border-hover":         { "$value": "{color.yellow.600}",  "$type": "color" }
+    },
+    "accent": {
+      "$description": "Red as secondary brand accent — hero moments, featured badges, now-showing",
+      "background":  { "$value": "{color.red.500}",    "$type": "color" },
+      "foreground":  { "$value": "{color.neutral.0}",  "$type": "color" },
+      "subtle":      { "$value": "{color.red.50}",     "$type": "color" },
+      "border":      { "$value": "{color.red.500}",    "$type": "color" }
+    },
+    "secondary-action": {
+      "$description": "Blue for secondary/informational interactions",
+      "background":  { "$value": "{color.blue.500}",    "$type": "color" },
+      "foreground":  { "$value": "{color.neutral.0}",   "$type": "color" },
+      "subtle":      { "$value": "{color.blue.50}",     "$type": "color" },
+      "border":      { "$value": "{color.blue.500}",    "$type": "color" }
+    },
+    "feedback": {
+      "success": {
+        "background": { "$value": "{color.blue.50}",   "$type": "color", "$description": "Blue doubles as success in this palette" },
+        "text":       { "$value": "{color.blue.700}",  "$type": "color" },
+        "border":     { "$value": "{color.blue.500}",  "$type": "color" },
+        "icon":       { "$value": "{color.blue.600}",  "$type": "color" }
+      },
+      "warning": {
+        "background": { "$value": "{color.yellow.50}",  "$type": "color" },
+        "text":       { "$value": "{color.yellow.800}", "$type": "color" },
+        "border":     { "$value": "{color.yellow.600}", "$type": "color" },
+        "icon":       { "$value": "{color.yellow.700}", "$type": "color" }
+      },
+      "error": {
+        "background": { "$value": "{color.red.50}",    "$type": "color" },
+        "text":       { "$value": "{color.red.700}",   "$type": "color" },
+        "border":     { "$value": "{color.red.500}",   "$type": "color" },
+        "icon":       { "$value": "{color.red.600}",   "$type": "color" }
+      },
+      "info": {
+        "background": { "$value": "{color.blue.50}",   "$type": "color" },
+        "text":       { "$value": "{color.blue.700}",  "$type": "color" },
+        "border":     { "$value": "{color.blue.400}",  "$type": "color" },
+        "icon":       { "$value": "{color.blue.600}",  "$type": "color" }
+      }
+    }
+  },
+
+  "typography": {
+    "font-family": {
+      "base":    { "$value": "{font-family.sans}",    "$type": "fontFamily", "$description": "DM Sans — UI, body" },
+      "mono":    { "$value": "{font-family.mono}",    "$type": "fontFamily" },
+      "display": { "$value": "{font-family.display}", "$type": "fontFamily", "$description": "Barlow Condensed — titles, hero, poster headlines" }
+    },
+    "size": {
+      "xs":  { "$value": "{font-size.12}", "$type": "dimension" },
+      "sm":  { "$value": "{font-size.14}", "$type": "dimension" },
+      "md":  { "$value": "{font-size.16}", "$type": "dimension" },
+      "lg":  { "$value": "{font-size.18}", "$type": "dimension" },
+      "xl":  { "$value": "{font-size.22}", "$type": "dimension" },
+      "2xl": { "$value": "{font-size.28}", "$type": "dimension" },
+      "3xl": { "$value": "{font-size.40}", "$type": "dimension", "$description": "Movie title — Barlow Condensed Bold" },
+      "4xl": { "$value": "{font-size.56}", "$type": "dimension" }
+    },
+    "weight": {
+      "body":     { "$value": "{font-weight.regular}",  "$type": "fontWeight" },
+      "emphasis": { "$value": "{font-weight.medium}",   "$type": "fontWeight" },
+      "heading":  { "$value": "{font-weight.semibold}", "$type": "fontWeight" },
+      "display":  { "$value": "{font-weight.bold}",     "$type": "fontWeight", "$description": "Barlow Condensed Bold — cinematic weight" }
+    },
+    "line-height": {
+      "display": { "$value": "{line-height.tight}", "$type": "number", "$description": "1.15 — compressed poster headlines" },
+      "heading": { "$value": "{line-height.snug}",  "$type": "number" },
+      "body":    { "$value": "{line-height.normal}","$type": "number" },
+      "label":   { "$value": "{line-height.none}",  "$type": "number" }
+    },
+    "letter-spacing": {
+      "display": { "$value": "{letter-spacing.normal}", "$type": "dimension", "$description": "Barlow Condensed has its own width — no extra tracking" },
+      "heading": { "$value": "{letter-spacing.normal}", "$type": "dimension" },
+      "body":    { "$value": "{letter-spacing.normal}", "$type": "dimension" },
+      "label":   { "$value": "{letter-spacing.wide}",   "$type": "dimension" },
+      "mono":    { "$value": "{letter-spacing.normal}", "$type": "dimension" }
+    }
+  },
+
+  "border-radius": {
+    "sm":   { "$value": "{radius.2}",    "$type": "dimension", "$description": "4px" },
+    "md":   { "$value": "{radius.3}",    "$type": "dimension", "$description": "6px — buttons, inputs" },
+    "lg":   { "$value": "{radius.4}",    "$type": "dimension", "$description": "8px — cards" },
+    "xl":   { "$value": "{radius.6}",    "$type": "dimension", "$description": "12px — modals, posters" },
+    "full": { "$value": "{radius.full}", "$type": "dimension" }
+  },
+
+  "shadow": {
+    "sm":    { "$value": "0 1px 3px rgba(28, 28, 28, 0.10), 0 1px 2px rgba(28, 28, 28, 0.06)",  "$type": "shadow" },
+    "md":    { "$value": "0 4px 12px rgba(28, 28, 28, 0.12), 0 2px 6px rgba(28, 28, 28, 0.08)", "$type": "shadow" },
+    "lg":    { "$value": "0 16px 40px rgba(28, 28, 28, 0.16), 0 6px 16px rgba(28, 28, 28, 0.10)", "$type": "shadow", "$description": "Movie card hover — strong lift" },
+    "focus": { "$value": "0 0 0 3px rgba(247, 202, 66, 0.5)",                                    "$type": "shadow", "$description": "Yellow focus ring" }
+  },
+
+  "motion": {
+    "duration": {
+      "fast":   { "$value": "{duration.fast}",   "$type": "duration" },
+      "normal": { "$value": "{duration.normal}", "$type": "duration" },
+      "slow":   { "$value": "{duration.slow}",   "$type": "duration" }
+    },
+    "easing": {
+      "default": { "$value": "{easing.out}",    "$type": "cubicBezier" },
+      "spring":  { "$value": "{easing.spring}", "$type": "cubicBezier" }
+    }
+  },
+
+  "spacing": {
+    "component": {
+      "25":  { "$value": "{spacing.25}",  "$type": "dimension", "$description": "4px" },
+      "50":  { "$value": "{spacing.50}",  "$type": "dimension", "$description": "8px" },
+      "75":  { "$value": "{spacing.75}",  "$type": "dimension", "$description": "12px" },
+      "100": { "$value": "{spacing.100}", "$type": "dimension", "$description": "16px" },
+      "150": { "$value": "{spacing.150}", "$type": "dimension", "$description": "24px" },
+      "200": { "$value": "{spacing.200}", "$type": "dimension", "$description": "32px" }
+    },
+    "layout": {
+      "100": { "$value": "{spacing.100}", "$type": "dimension", "$description": "16px" },
+      "150": { "$value": "{spacing.150}", "$type": "dimension", "$description": "24px" },
+      "200": { "$value": "{spacing.200}", "$type": "dimension", "$description": "32px" },
+      "300": { "$value": "{spacing.300}", "$type": "dimension", "$description": "48px" },
+      "400": { "$value": "{spacing.400}", "$type": "dimension", "$description": "64px" },
+      "600": { "$value": "{spacing.600}", "$type": "dimension", "$description": "96px" }
+    }
+  }
+}

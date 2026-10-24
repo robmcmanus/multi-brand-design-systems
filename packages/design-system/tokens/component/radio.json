@@ -1,0 +1,35 @@
+{
+  "$description": "Radio button component tokens — used for the brand selector and general radio inputs.",
+
+  "component": {
+    "radio": {
+      "size":               { "$value": "{spacing.4}",                    "$type": "dimension", "$description": "16px outer ring" },
+      "dot-size":           { "$value": "{spacing.2}",                    "$type": "dimension", "$description": "8px inner dot" },
+
+      "border":             { "$value": "{color.border.default}",         "$type": "color" },
+      "border-hover":       { "$value": "{color.border.strong}",          "$type": "color" },
+      "border-checked":     { "$value": "{color.action.background}",      "$type": "color" },
+      "border-disabled":    { "$value": "{color.border.subtle}",          "$type": "color" },
+      "border-width":       { "$value": "{border-width.2}",               "$type": "dimension" },
+
+      "background":         { "$value": "{color.background.surface}",     "$type": "color" },
+      "background-checked": { "$value": "{color.background.surface}",     "$type": "color" },
+      "background-disabled":{ "$value": "{color.background.subtle}",      "$type": "color" },
+
+      "dot-color":          { "$value": "{color.action.background}",      "$type": "color" },
+      "dot-color-disabled": { "$value": "{color.text.disabled}",          "$type": "color" },
+
+      "shadow-focus":       { "$value": "{shadow.focus}",                 "$type": "shadow" },
+
+      "label-font-family":  { "$value": "{typography.font-family.base}",  "$type": "fontFamily" },
+      "label-font-size":    { "$value": "{typography.size.md}",           "$type": "dimension" },
+      "label-font-weight":  { "$value": "{typography.weight.body}",       "$type": "fontWeight" },
+      "label-color":        { "$value": "{color.text.primary}",           "$type": "color" },
+      "label-color-disabled":{ "$value": "{color.text.disabled}",         "$type": "color" },
+
+      "gap":                { "$value": "{spacing.component.sm}",         "$type": "dimension" },
+      "transition-duration":{ "$value": "{motion.duration.fast}",         "$type": "duration" },
+      "transition-easing":  { "$value": "{motion.easing.default}",        "$type": "cubicBezier" }
+    }
+  }
+}

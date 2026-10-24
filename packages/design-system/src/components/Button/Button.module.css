@@ -1,0 +1,178 @@
+/* ─── Button ─────────────────────────────────────────────────────────────────
+   Reads from semantic tokens — brand switching happens automatically via
+   the data-brand attribute on <html>. No brand-specific rules here.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+.button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-style: solid;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  vertical-align: middle;
+
+  /* Typography */
+  font-family: var(--ds-typography-font-family-base);
+  font-size: var(--ds-typography-size-md);
+  font-weight: var(--ds-typography-weight-emphasis);
+  letter-spacing: var(--ds-typography-letter-spacing-label);
+  line-height: 1;
+
+  /* Size — md default */
+  padding-block: var(--ds-spacing-component-sm);
+  padding-inline: var(--ds-spacing-component-lg);
+  border-radius: var(--ds-border-radius-md);
+  border-width: 1px;
+
+  /* Motion */
+  transition-property: background-color, color, border-color, box-shadow, opacity;
+  transition-duration: var(--ds-motion-duration-fast, 150ms);
+  transition-timing-function: var(--ds-motion-easing-default, ease);
+}
+
+/* ── Sizes ─────────────────────────────────────────────────────────────────── */
+
+.sm {
+  padding-block: var(--ds-spacing-component-xs);
+  padding-inline: var(--ds-spacing-component-md);
+  font-size: var(--ds-typography-size-sm);
+}
+
+.lg {
+  padding-block: var(--ds-spacing-component-md);
+  padding-inline: var(--ds-spacing-component-xl);
+  font-size: var(--ds-typography-size-lg);
+}
+
+/* ── Primary ───────────────────────────────────────────────────────────────── */
+
+.primary {
+  background-color: var(--ds-color-action-background);
+  color: var(--ds-color-action-foreground);
+  border-color: var(--ds-color-action-border);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--ds-color-action-background-hover);
+  border-color: var(--ds-color-action-border-hover);
+}
+
+.primary:active:not(:disabled) {
+  background-color: var(--ds-color-action-background-active);
+  border-color: var(--ds-color-action-background-active);
+}
+
+.primary:disabled {
+  background-color: var(--ds-color-action-background-disabled);
+  color: var(--ds-color-action-foreground-disabled);
+  border-color: var(--ds-color-action-background-disabled);
+  cursor: not-allowed;
+}
+
+/* ── Secondary ─────────────────────────────────────────────────────────────── */
+
+.secondary {
+  background-color: var(--ds-color-action-background-subtle);
+  color: var(--ds-color-action-border);
+  border-color: var(--ds-color-action-border);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: var(--ds-color-action-border-hover);
+  color: var(--ds-color-action-border-hover);
+}
+
+.secondary:active:not(:disabled) {
+  background-color: var(--ds-color-action-background-subtle);
+  border-color: var(--ds-color-action-background-active);
+  color: var(--ds-color-action-background-active);
+}
+
+.secondary:disabled {
+  background-color: var(--ds-color-background-subtle);
+  color: var(--ds-color-action-foreground-disabled);
+  border-color: var(--ds-color-border-default);
+  cursor: not-allowed;
+}
+
+/* ── Ghost ─────────────────────────────────────────────────────────────────── */
+
+.ghost {
+  background-color: transparent;
+  color: var(--ds-color-text-primary);
+  border-color: transparent;
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: var(--ds-color-background-subtle);
+}
+
+.ghost:active:not(:disabled) {
+  background-color: var(--ds-color-background-subtle);
+  color: var(--ds-color-text-secondary);
+}
+
+.ghost:disabled {
+  color: var(--ds-color-text-disabled);
+  cursor: not-allowed;
+}
+
+/* ── Destructive ───────────────────────────────────────────────────────────── */
+
+.destructive {
+  background-color: var(--ds-color-feedback-error-border);
+  color: var(--ds-color-text-inverse);
+  border-color: var(--ds-color-feedback-error-border);
+}
+
+.destructive:hover:not(:disabled) {
+  background-color: var(--ds-color-feedback-error-icon);
+  border-color: var(--ds-color-feedback-error-icon);
+}
+
+.destructive:active:not(:disabled) {
+  background-color: var(--ds-color-feedback-error-text);
+  border-color: var(--ds-color-feedback-error-text);
+}
+
+.destructive:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ── Focus ─────────────────────────────────────────────────────────────────── */
+
+.button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--ds-color-background-canvas),
+    0 0 0 4px var(--ds-color-border-focus);
+}
+
+/* ── Loading ───────────────────────────────────────────────────────────────── */
+
+.loading {
+  cursor: wait;
+}
+
+.loading .label {
+  opacity: 0.6;
+}
+
+/* ── Icons ─────────────────────────────────────────────────────────────────── */
+
+.iconLeft,
+.iconRight {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  /* Size relative to font-size so icons scale with button size */
+  font-size: 1em;
+  line-height: 1;
+}

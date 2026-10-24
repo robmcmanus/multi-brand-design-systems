@@ -1,0 +1,73 @@
+{
+  "$description": "Brand 3 primitives — Internal tools / Sci-fi. High-tech, futuristic HUD aesthetic. Deep space dark + sterile light mode. Cyan accent, electric purple secondary.",
+
+  "color": {
+    "void": {
+      "50":  { "$value": "#F0F5FF", "$type": "color", "$description": "Light mode canvas — cool blue-white" },
+      "100": { "$value": "#E4ECF9", "$type": "color" },
+      "200": { "$value": "#C8D9F0", "$type": "color" },
+      "700": { "$value": "#0D1521", "$type": "color", "$description": "Dark mode surface" },
+      "800": { "$value": "#091019", "$type": "color", "$description": "Dark mode canvas" },
+      "850": { "$value": "#070C14", "$type": "color", "$description": "Deepest dark — nav, sidebar" },
+      "900": { "$value": "#040810", "$type": "color", "$description": "Pure void — modal scrim bg" }
+    },
+    "cyan": {
+      "50":  { "$value": "#E0F9FF", "$type": "color" },
+      "100": { "$value": "#B3F0FF", "$type": "color" },
+      "200": { "$value": "#66E3FF", "$type": "color" },
+      "300": { "$value": "#1AD4FF", "$type": "color" },
+      "400": { "$value": "#00C4F0", "$type": "color" },
+      "500": { "$value": "#00A8D4", "$type": "color", "$description": "Primary cyan — restrained for light mode" },
+      "glow": { "$value": "#00D4FF", "$type": "color", "$description": "Full-brightness cyan — glow effects, dark mode only" }
+    },
+    "purple": {
+      "100": { "$value": "#EDE9FE", "$type": "color" },
+      "200": { "$value": "#DDD6FE", "$type": "color" },
+      "300": { "$value": "#C4B5FD", "$type": "color" },
+      "400": { "$value": "#A78BFA", "$type": "color" },
+      "500": { "$value": "#8B5CF6", "$type": "color", "$description": "Electric violet — secondary accent" },
+      "600": { "$value": "#7C3AED", "$type": "color" },
+      "glow": { "$value": "#A855F7", "$type": "color", "$description": "Purple glow — dark mode only" }
+    },
+    "grid": {
+      "subtle-dark":  { "$value": "#00D4FF0A", "$type": "color", "$description": "Faint cyan grid on dark" },
+      "default-dark": { "$value": "#00D4FF14", "$type": "color" },
+      "subtle-light": { "$value": "#00A8D40F", "$type": "color" },
+      "default-light": { "$value": "#00A8D41F", "$type": "color" }
+    },
+    "success": {
+      "400": { "$value": "#00F5A0", "$type": "color", "$description": "Electric green — dark mode" },
+      "500": { "$value": "#00CC80", "$type": "color" },
+      "600": { "$value": "#00A366", "$type": "color", "$description": "Grounded green — light mode" }
+    },
+    "warning": {
+      "400": { "$value": "#FFD60A", "$type": "color" },
+      "500": { "$value": "#FFAA00", "$type": "color" },
+      "600": { "$value": "#CC8800", "$type": "color" }
+    },
+    "error": {
+      "400": { "$value": "#FF3366", "$type": "color", "$description": "Electric red — dark mode" },
+      "500": { "$value": "#E8002E", "$type": "color" },
+      "600": { "$value": "#C40026", "$type": "color", "$description": "Grounded red — light mode" }
+    },
+    "slate": {
+      "100": { "$value": "#E9EEF6", "$type": "color" },
+      "200": { "$value": "#C8D3E3", "$type": "color" },
+      "300": { "$value": "#8FA3C0", "$type": "color" },
+      "400": { "$value": "#5D7A9E", "$type": "color" },
+      "500": { "$value": "#3D5A80", "$type": "color" },
+      "600": { "$value": "#2A4060", "$type": "color" },
+      "700": { "$value": "#1A2B45", "$type": "color" },
+      "800": { "$value": "#0F1C30", "$type": "color" }
+    },
+    "white":       { "$value": "#FFFFFF",     "$type": "color" },
+    "black":       { "$value": "#000000",     "$type": "color" },
+    "transparent": { "$value": "#00000000", "$type": "color" }
+  },
+
+  "font-family": {
+    "display": { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily", "$description": "Technical geometric — headers, labels" },
+    "sans":    { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily" },
+    "mono":    { "$value": "'JetBrains Mono', 'Space Mono', 'Courier New', monospace", "$type": "fontFamily", "$description": "Data, code, HUD readouts" }
+  }
+}

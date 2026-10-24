@@ -1,0 +1,65 @@
+{
+  "$description": "Brand 2 primitives — Movie-finding app. Bold primary triad: golden yellow, warm red, steel blue. Cream + near-black for light/dark modes. Bauhaus/poster energy.",
+
+  "color": {
+    "yellow": {
+      "50":  { "$value": "#FFFBE8", "$type": "color" },
+      "100": { "$value": "#FFF3BC", "$type": "color" },
+      "200": { "$value": "#FFE878", "$type": "color" },
+      "300": { "$value": "#FFD848", "$type": "color" },
+      "400": { "$value": "#FFCF44", "$type": "color" },
+      "500": { "$value": "#F7CA42", "$type": "color", "$description": "Source — golden yellow CTA" },
+      "600": { "$value": "#DFAB20", "$type": "color" },
+      "700": { "$value": "#B88A12", "$type": "color" },
+      "800": { "$value": "#8F6A09", "$type": "color" },
+      "900": { "$value": "#614805", "$type": "color" }
+    },
+    "red": {
+      "50":  { "$value": "#FFF1ED", "$type": "color" },
+      "100": { "$value": "#FFD8CC", "$type": "color" },
+      "200": { "$value": "#FFB09A", "$type": "color" },
+      "300": { "$value": "#F5816A", "$type": "color" },
+      "400": { "$value": "#E55A3D", "$type": "color" },
+      "500": { "$value": "#D44830", "$type": "color", "$description": "Source — warm red-orange" },
+      "600": { "$value": "#BA3520", "$type": "color" },
+      "700": { "$value": "#982414", "$type": "color" },
+      "800": { "$value": "#73180A", "$type": "color" },
+      "900": { "$value": "#4E0F05", "$type": "color" }
+    },
+    "blue": {
+      "50":  { "$value": "#EEF5FF", "$type": "color" },
+      "100": { "$value": "#CEE0FF", "$type": "color" },
+      "200": { "$value": "#A2C6F5", "$type": "color" },
+      "300": { "$value": "#70A6E2", "$type": "color" },
+      "400": { "$value": "#4584CA", "$type": "color" },
+      "500": { "$value": "#2B6AAD", "$type": "color", "$description": "Source — steel blue" },
+      "600": { "$value": "#1D5490", "$type": "color" },
+      "700": { "$value": "#123E72", "$type": "color" },
+      "800": { "$value": "#0A2C55", "$type": "color" },
+      "900": { "$value": "#051B38", "$type": "color" }
+    },
+    "neutral": {
+      "0":   { "$value": "#FFFFFF", "$type": "color" },
+      "50":  { "$value": "#F5F2EB", "$type": "color", "$description": "Source — cream, light mode canvas" },
+      "100": { "$value": "#EAE6DC", "$type": "color" },
+      "200": { "$value": "#D5CFC2", "$type": "color" },
+      "300": { "$value": "#BCB4A4", "$type": "color" },
+      "400": { "$value": "#9B9386", "$type": "color" },
+      "500": { "$value": "#78716A", "$type": "color" },
+      "600": { "$value": "#57514C", "$type": "color" },
+      "700": { "$value": "#3A3530", "$type": "color" },
+      "800": { "$value": "#262220", "$type": "color" },
+      "900": { "$value": "#1C1C1C", "$type": "color", "$description": "Source — near-black, dark mode canvas" },
+      "950": { "$value": "#111110", "$type": "color" }
+    },
+    "white":       { "$value": "#FFFFFF",     "$type": "color" },
+    "black":       { "$value": "#000000",     "$type": "color" },
+    "transparent": { "$value": "#00000000", "$type": "color" }
+  },
+
+  "font-family": {
+    "display": { "$value": "'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif", "$type": "fontFamily", "$description": "Bold condensed — movie titles, hero text, poster energy" },
+    "sans":    { "$value": "'DM Sans', 'Helvetica Neue', system-ui, sans-serif",       "$type": "fontFamily", "$description": "Clean consumer UI" },
+    "mono":    { "$value": "'DM Mono', 'Courier New', monospace",                      "$type": "fontFamily" }
+  }
+}

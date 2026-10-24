@@ -1,0 +1,59 @@
+{
+  "$description": "Brand 1 primitives — Portfolio / Folio site. Sleek, restrained, forward-thinking. White canvas, near-black type, cool neutral grays, muted indigo accent.",
+
+  "color": {
+    "neutral": {
+      "0":   { "$value": "#FFFFFF", "$type": "color" },
+      "50":  { "$value": "#F9FAFB", "$type": "color" },
+      "100": { "$value": "#F3F4F6", "$type": "color" },
+      "150": { "$value": "#EAECF0", "$type": "color" },
+      "200": { "$value": "#E5E7EB", "$type": "color" },
+      "300": { "$value": "#D1D5DB", "$type": "color" },
+      "400": { "$value": "#9CA3AF", "$type": "color" },
+      "500": { "$value": "#6B7280", "$type": "color" },
+      "600": { "$value": "#4B5563", "$type": "color" },
+      "700": { "$value": "#374151", "$type": "color" },
+      "800": { "$value": "#1E1E1E", "$type": "color" },
+      "900": { "$value": "#0F1117", "$type": "color" }
+    },
+    "accent": {
+      "50":  { "$value": "#EEF2FF", "$type": "color" },
+      "100": { "$value": "#E0E7FF", "$type": "color" },
+      "200": { "$value": "#C7D2FE", "$type": "color" },
+      "300": { "$value": "#A5B4FC", "$type": "color" },
+      "400": { "$value": "#818CF8", "$type": "color" },
+      "500": { "$value": "#6366F1", "$type": "color", "$description": "Muted indigo — primary action" },
+      "600": { "$value": "#4F46E5", "$type": "color" },
+      "700": { "$value": "#4338CA", "$type": "color" },
+      "800": { "$value": "#3730A3", "$type": "color" },
+      "900": { "$value": "#312E81", "$type": "color" }
+    },
+    "success": {
+      "100": { "$value": "#DCFCE7", "$type": "color" },
+      "400": { "$value": "#4ADE80", "$type": "color" },
+      "500": { "$value": "#16A34A", "$type": "color" },
+      "600": { "$value": "#15803D", "$type": "color" }
+    },
+    "warning": {
+      "100": { "$value": "#FEF9C3", "$type": "color" },
+      "400": { "$value": "#FACC15", "$type": "color" },
+      "500": { "$value": "#CA8A04", "$type": "color" },
+      "600": { "$value": "#A16207", "$type": "color" }
+    },
+    "error": {
+      "100": { "$value": "#FEE2E2", "$type": "color" },
+      "400": { "$value": "#F87171", "$type": "color" },
+      "500": { "$value": "#EF4444", "$type": "color" },
+      "600": { "$value": "#DC2626", "$type": "color" }
+    },
+    "white":       { "$value": "#FFFFFF",     "$type": "color" },
+    "black":       { "$value": "#000000",     "$type": "color" },
+    "transparent": { "$value": "#00000000", "$type": "color" }
+  },
+
+  "font-family": {
+    "sans":    { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily" },
+    "mono":    { "$value": "'JetBrains Mono', 'Fira Code', monospace",               "$type": "fontFamily" },
+    "display": { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily" }
+  }
+}

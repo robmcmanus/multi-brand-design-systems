@@ -1,0 +1,47 @@
+{
+  "$description": "Badge component tokens — status indicators, labels, tags.",
+
+  "component": {
+    "badge": {
+      "border-radius":  { "$value": "{border-radius.full}", "$type": "dimension" },
+      "padding-x":      { "$value": "{spacing.component.sm}", "$type": "dimension" },
+      "padding-y":      { "$value": "{spacing.1}",            "$type": "dimension" },
+      "font-family":    { "$value": "{typography.font-family.base}",    "$type": "fontFamily" },
+      "font-size":      { "$value": "{typography.size.xs}",             "$type": "dimension" },
+      "font-weight":    { "$value": "{typography.weight.heading}",      "$type": "fontWeight" },
+      "letter-spacing": { "$value": "{typography.letter-spacing.wide}", "$type": "dimension" },
+      "gap":            { "$value": "{spacing.1}",                      "$type": "dimension" },
+
+      "default": {
+        "background": { "$value": "{color.background.subtle}",   "$type": "color" },
+        "foreground": { "$value": "{color.text.secondary}",      "$type": "color" },
+        "border":     { "$value": "{color.border.default}",      "$type": "color" }
+      },
+      "emphasis": {
+        "background": { "$value": "{color.background.emphasis}", "$type": "color" },
+        "foreground": { "$value": "{color.text.on-emphasis}",    "$type": "color" },
+        "border":     { "$value": "{color.background.emphasis}", "$type": "color" }
+      },
+      "success": {
+        "background": { "$value": "{color.feedback.success.background}", "$type": "color" },
+        "foreground": { "$value": "{color.feedback.success.text}",       "$type": "color" },
+        "border":     { "$value": "{color.feedback.success.border}",     "$type": "color" }
+      },
+      "warning": {
+        "background": { "$value": "{color.feedback.warning.background}", "$type": "color" },
+        "foreground": { "$value": "{color.feedback.warning.text}",       "$type": "color" },
+        "border":     { "$value": "{color.feedback.warning.border}",     "$type": "color" }
+      },
+      "error": {
+        "background": { "$value": "{color.feedback.error.background}", "$type": "color" },
+        "foreground": { "$value": "{color.feedback.error.text}",       "$type": "color" },
+        "border":     { "$value": "{color.feedback.error.border}",     "$type": "color" }
+      },
+      "info": {
+        "background": { "$value": "{color.feedback.info.background}", "$type": "color" },
+        "foreground": { "$value": "{color.feedback.info.text}",       "$type": "color" },
+        "border":     { "$value": "{color.feedback.info.border}",     "$type": "color" }
+      }
+    }
+  }
+}

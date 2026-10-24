@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd packages/design-system && npm run tokens && cd ../../apps/website && npm run build",
+  "outputDirectory": "apps/website/.next",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "rootDirectory": "apps/website"
+}

@@ -1,0 +1,24 @@
+{
+  "$description": "Link component tokens.",
+
+  "component": {
+    "link": {
+      "foreground":           { "$value": "{color.text.link}",                 "$type": "color" },
+      "foreground-hover":     { "$value": "{color.text.link-hover}",           "$type": "color" },
+      "foreground-visited":   { "$value": "{color.text.tertiary}",             "$type": "color" },
+      "foreground-disabled":  { "$value": "{color.text.disabled}",             "$type": "color" },
+
+      "decoration":           { "$value": "underline",  "$type": "other" },
+      "decoration-hover":     { "$value": "underline",  "$type": "other" },
+      "decoration-thickness": { "$value": "{border-width.1}", "$type": "dimension" },
+
+      "font-weight":          { "$value": "{typography.weight.emphasis}",       "$type": "fontWeight" },
+
+      "transition-duration":  { "$value": "{motion.duration.fast}",            "$type": "duration" },
+      "transition-easing":    { "$value": "{motion.easing.default}",           "$type": "cubicBezier" },
+
+      "icon-gap":             { "$value": "{spacing.component.xs}",            "$type": "dimension" },
+      "icon-size":            { "$value": "{typography.size.sm}",              "$type": "dimension" }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/* ─── Token imports ─────────────────────────────────────────────────────────
+   Load order matters:
+   1. global    — spacing, radius, type scale (always :root)
+   2. brands    — all loaded simultaneously; data-brand attr selects the winner
+   3. components — var() references that resolve to whichever brand is active
+   ─────────────────────────────────────────────────────────────────────────── */
+@import '../../build/css/global.css';
+@import '../../build/css/brand-1.css';
+@import '../../build/css/brand-2.css';
+@import '../../build/css/brand-3.css';
+@import '../../build/css/components.css';
+
+/* ─── Reset ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--ds-typography-font-family-base);
+  font-size: var(--ds-typography-size-md);
+  font-weight: var(--ds-typography-weight-body);
+  line-height: var(--ds-typography-line-height-body);
+  color: var(--ds-color-text-primary);
+  background-color: var(--ds-color-background-canvas);
+  transition:
+    background-color var(--ds-motion-duration-normal) var(--ds-motion-easing-default),
+    color var(--ds-motion-duration-normal) var(--ds-motion-easing-default);
+}
+
+/* ─── Brand transition ───────────────────────────────────────────────────────
+   Smooth brand switching. Applied to html so the whole page transitions.
+   ─────────────────────────────────────────────────────────────────────────── */
+html[data-brand] * {
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--ds-motion-duration-normal);
+  transition-timing-function: var(--ds-motion-easing-default);
+}
+
+/* Opt out for elements where transition feels wrong */
+html[data-brand] input,
+html[data-brand] textarea,
+html[data-brand] img,
+html[data-brand] svg {
+  transition: none;
+}
+
+/* ─── Focus visible ─────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-shadow-focus);
+}
+
+/* ─── Typography base ────────────────────────────────────────────────────────── */
+a {
+  color: var(--ds-color-text-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--ds-motion-duration-fast) var(--ds-motion-easing-default);
+}
+
+a:hover {
+  color: var(--ds-color-text-link-hover);
+}
+
+code, kbd, pre {
+  font-family: var(--ds-typography-font-family-mono);
+}
