@@ -14,9 +14,21 @@ const preview: Preview = {
         title: 'Brand',
         icon: 'paintbrush',
         items: [
-          { value: '1', title: 'Brand 1 — Dev Tool' },
-          { value: '2', title: 'Brand 2 — Wellness' },
-          { value: '3', title: 'Brand 3 — Enterprise' },
+          { value: '1', title: 'Brand 1 — Portfolio' },
+          { value: '2', title: 'Brand 2 — Movie finder' },
+          { value: '3', title: 'Brand 3 — Internal tools' },
+        ],
+        dynamicTitle: true,
+      },
+    },
+    theme: {
+      description: 'Theme (Brand 3 only)',
+      toolbar: {
+        title: 'Theme',
+        icon: 'circlehollow',
+        items: [
+          { value: 'dark', title: 'Dark (default)' },
+          { value: 'light', title: 'Light' },
         ],
         dynamicTitle: true,
       },
@@ -25,12 +37,19 @@ const preview: Preview = {
 
   initialGlobals: {
     brand: '1',
+    theme: 'dark',
   },
 
   decorators: [
     (Story, context) => {
       const brand = context.globals.brand ?? '1'
       document.documentElement.setAttribute('data-brand', brand)
+      // Only Brand 3 has a light theme; dark is its default.
+      if (brand === '3' && context.globals.theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light')
+      } else {
+        document.documentElement.removeAttribute('data-theme')
+      }
       return Story()
     },
   ],

@@ -36,7 +36,7 @@ const meta: Meta<typeof Button> = {
     docs: {
       description: {
         component:
-          'Core interactive element. Reads from semantic tokens — switch brands via the toolbar to see each brand's personality applied automatically.',
+          "Core interactive element. Reads from component tokens — switch brands via the toolbar to see each brand's personality applied automatically.",
       },
     },
   },

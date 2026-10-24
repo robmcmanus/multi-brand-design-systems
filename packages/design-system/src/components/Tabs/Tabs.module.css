@@ -1,0 +1,45 @@
+.list {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: var(--ds-component-tabs-list-border-width) solid var(--ds-component-tabs-list-border);
+}
+
+.tab {
+  padding-inline: var(--ds-component-tabs-tab-padding-x);
+  padding-block: var(--ds-component-tabs-tab-padding-y);
+  border: 0;
+  border-bottom: var(--ds-component-tabs-tab-indicator-height) solid transparent;
+  margin-bottom: calc(var(--ds-component-tabs-list-border-width) * -1);
+  border-radius: var(--ds-component-tabs-tab-border-radius);
+  background: transparent;
+  color: var(--ds-component-tabs-tab-foreground);
+  font: inherit;
+  font-size: var(--ds-component-tabs-tab-font-size);
+  font-weight: var(--ds-component-tabs-tab-font-weight);
+  cursor: pointer;
+}
+
+.tab:hover:not(:disabled) {
+  background-color: var(--ds-component-tabs-tab-background-hover);
+  color: var(--ds-component-tabs-tab-foreground-hover);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--ds-component-tabs-tab-focus-ring);
+  outline-offset: -2px;
+}
+
+.selected,
+.selected:hover:not(:disabled) {
+  color: var(--ds-component-tabs-tab-foreground-selected);
+  font-weight: var(--ds-component-tabs-tab-font-weight-selected);
+  border-bottom-color: var(--ds-component-tabs-tab-indicator);
+  background-color: transparent;
+}
+
+.tab:disabled {
+  color: var(--ds-component-tabs-tab-foreground-disabled);
+  cursor: not-allowed;
+}
+
+.panel { padding-block: var(--ds-spacing-component-150); }

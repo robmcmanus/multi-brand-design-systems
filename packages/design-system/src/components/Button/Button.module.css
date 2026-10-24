@@ -1,14 +1,13 @@
 /* ─── Button ─────────────────────────────────────────────────────────────────
-   Reads from semantic tokens — brand switching happens automatically via
-   the data-brand attribute on <html>. No brand-specific rules here.
+   Reads component tokens only. Brand switching happens through the semantic
+   tokens that the component tokens reference (data-brand on <html>).
    ─────────────────────────────────────────────────────────────────────────── */
 
 .button {
-  /* Layout */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: var(--ds-spacing-component-25);
   border-style: solid;
   cursor: pointer;
   text-decoration: none;
@@ -16,87 +15,74 @@
   user-select: none;
   position: relative;
   vertical-align: middle;
-
-  /* Typography */
-  font-family: var(--ds-typography-font-family-base);
-  font-size: var(--ds-typography-size-md);
-  font-weight: var(--ds-typography-weight-emphasis);
-  letter-spacing: var(--ds-typography-letter-spacing-label);
   line-height: 1;
 
-  /* Size — md default */
-  padding-block: var(--ds-spacing-component-sm);
-  padding-inline: var(--ds-spacing-component-lg);
-  border-radius: var(--ds-border-radius-md);
-  border-width: 1px;
-
-  /* Motion */
   transition-property: background-color, color, border-color, box-shadow, opacity;
-  transition-duration: var(--ds-motion-duration-fast, 150ms);
-  transition-timing-function: var(--ds-motion-easing-default, ease);
+  transition-duration: var(--ds-component-button-primary-transition-duration);
+  transition-timing-function: var(--ds-component-button-primary-transition-easing);
 }
 
-/* ── Sizes ─────────────────────────────────────────────────────────────────── */
+/* ── Sizes (md is the base, set on each variant below) ─────────────────────── */
 
 .sm {
-  padding-block: var(--ds-spacing-component-xs);
-  padding-inline: var(--ds-spacing-component-md);
-  font-size: var(--ds-typography-size-sm);
+  padding-block: var(--ds-component-button-size-sm-padding-y);
+  padding-inline: var(--ds-component-button-size-sm-padding-x);
+  font-size: var(--ds-component-button-size-sm-font-size);
 }
 
 .lg {
-  padding-block: var(--ds-spacing-component-md);
-  padding-inline: var(--ds-spacing-component-xl);
-  font-size: var(--ds-typography-size-lg);
+  padding-block: var(--ds-component-button-size-lg-padding-y);
+  padding-inline: var(--ds-component-button-size-lg-padding-x);
+  font-size: var(--ds-component-button-size-lg-font-size);
 }
 
 /* ── Primary ───────────────────────────────────────────────────────────────── */
 
 .primary {
-  background-color: var(--ds-color-action-background);
-  color: var(--ds-color-action-foreground);
-  border-color: var(--ds-color-action-border);
+  background-color: var(--ds-component-button-primary-background);
+  color: var(--ds-component-button-primary-foreground);
+  border-color: var(--ds-component-button-primary-border);
+  border-width: var(--ds-component-button-primary-border-width);
+  border-radius: var(--ds-component-button-primary-border-radius);
+  padding-block: var(--ds-component-button-primary-padding-y);
+  padding-inline: var(--ds-component-button-primary-padding-x);
+  font-family: var(--ds-component-button-primary-font-family);
+  font-size: var(--ds-component-button-primary-font-size);
+  font-weight: var(--ds-component-button-primary-font-weight);
+  letter-spacing: var(--ds-component-button-primary-letter-spacing);
 }
-
-.primary:hover:not(:disabled) {
-  background-color: var(--ds-color-action-background-hover);
-  border-color: var(--ds-color-action-border-hover);
-}
-
-.primary:active:not(:disabled) {
-  background-color: var(--ds-color-action-background-active);
-  border-color: var(--ds-color-action-background-active);
-}
-
+.primary:hover:not(:disabled) { background-color: var(--ds-component-button-primary-background-hover); }
+.primary:active:not(:disabled) { background-color: var(--ds-component-button-primary-background-active); }
 .primary:disabled {
-  background-color: var(--ds-color-action-background-disabled);
-  color: var(--ds-color-action-foreground-disabled);
-  border-color: var(--ds-color-action-background-disabled);
+  background-color: var(--ds-component-button-primary-background-disabled);
+  color: var(--ds-component-button-primary-foreground-disabled);
+  border-color: var(--ds-component-button-primary-background-disabled);
   cursor: not-allowed;
 }
 
 /* ── Secondary ─────────────────────────────────────────────────────────────── */
 
 .secondary {
-  background-color: var(--ds-color-action-background-subtle);
-  color: var(--ds-color-action-border);
-  border-color: var(--ds-color-action-border);
+  background-color: var(--ds-component-button-secondary-background);
+  color: var(--ds-component-button-secondary-foreground);
+  border-color: var(--ds-component-button-secondary-border);
+  border-width: var(--ds-component-button-secondary-border-width);
+  border-radius: var(--ds-component-button-secondary-border-radius);
+  padding-block: var(--ds-component-button-secondary-padding-y);
+  padding-inline: var(--ds-component-button-secondary-padding-x);
+  font-family: var(--ds-component-button-secondary-font-family);
+  font-size: var(--ds-component-button-secondary-font-size);
+  font-weight: var(--ds-component-button-secondary-font-weight);
+  letter-spacing: var(--ds-component-button-secondary-letter-spacing);
 }
-
 .secondary:hover:not(:disabled) {
-  border-color: var(--ds-color-action-border-hover);
-  color: var(--ds-color-action-border-hover);
+  background-color: var(--ds-component-button-secondary-background-hover);
+  border-color: var(--ds-component-button-secondary-border-hover);
 }
-
-.secondary:active:not(:disabled) {
-  background-color: var(--ds-color-action-background-subtle);
-  border-color: var(--ds-color-action-background-active);
-  color: var(--ds-color-action-background-active);
-}
-
+.secondary:active:not(:disabled) { background-color: var(--ds-component-button-secondary-background-active); }
 .secondary:disabled {
-  background-color: var(--ds-color-background-subtle);
-  color: var(--ds-color-action-foreground-disabled);
+  background-color: var(--ds-component-button-secondary-background-disabled);
+  color: var(--ds-component-button-secondary-foreground-disabled);
   border-color: var(--ds-color-border-default);
   cursor: not-allowed;
 }
@@ -105,65 +91,52 @@
 
 .ghost {
   background-color: transparent;
-  color: var(--ds-color-text-primary);
+  color: var(--ds-component-button-ghost-foreground);
   border-color: transparent;
+  border-width: 1px;
+  border-radius: var(--ds-component-button-ghost-border-radius);
+  padding-block: var(--ds-component-button-ghost-padding-y);
+  padding-inline: var(--ds-component-button-ghost-padding-x);
+  font-family: var(--ds-component-button-ghost-font-family);
+  font-size: var(--ds-component-button-ghost-font-size);
+  font-weight: var(--ds-component-button-ghost-font-weight);
+  letter-spacing: var(--ds-component-button-ghost-letter-spacing);
 }
-
-.ghost:hover:not(:disabled) {
-  background-color: var(--ds-color-background-subtle);
-}
-
-.ghost:active:not(:disabled) {
-  background-color: var(--ds-color-background-subtle);
-  color: var(--ds-color-text-secondary);
-}
-
-.ghost:disabled {
-  color: var(--ds-color-text-disabled);
-  cursor: not-allowed;
-}
+.ghost:hover:not(:disabled) { background-color: var(--ds-component-button-ghost-background-hover); }
+.ghost:active:not(:disabled) { background-color: var(--ds-component-button-ghost-background-active); }
+.ghost:disabled { color: var(--ds-component-button-ghost-foreground-disabled); cursor: not-allowed; }
 
 /* ── Destructive ───────────────────────────────────────────────────────────── */
 
 .destructive {
-  background-color: var(--ds-color-feedback-error-border);
-  color: var(--ds-color-text-inverse);
-  border-color: var(--ds-color-feedback-error-border);
+  background-color: var(--ds-component-button-destructive-background);
+  color: var(--ds-component-button-destructive-foreground);
+  border-color: var(--ds-component-button-destructive-border);
+  border-width: var(--ds-component-button-destructive-border-width);
+  border-radius: var(--ds-component-button-destructive-border-radius);
+  padding-block: var(--ds-component-button-destructive-padding-y);
+  padding-inline: var(--ds-component-button-destructive-padding-x);
+  font-family: var(--ds-component-button-destructive-font-family);
+  font-size: var(--ds-component-button-destructive-font-size);
+  font-weight: var(--ds-component-button-destructive-font-weight);
 }
-
 .destructive:hover:not(:disabled) {
-  background-color: var(--ds-color-feedback-error-icon);
-  border-color: var(--ds-color-feedback-error-icon);
+  background-color: var(--ds-component-button-destructive-background-hover);
+  border-color: var(--ds-component-button-destructive-background-hover);
 }
-
-.destructive:active:not(:disabled) {
-  background-color: var(--ds-color-feedback-error-text);
-  border-color: var(--ds-color-feedback-error-text);
-}
-
-.destructive:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
+.destructive:disabled { opacity: 0.45; cursor: not-allowed; }
 
 /* ── Focus ─────────────────────────────────────────────────────────────────── */
 
 .button:focus-visible {
   outline: none;
-  box-shadow:
-    0 0 0 2px var(--ds-color-background-canvas),
-    0 0 0 4px var(--ds-color-border-focus);
+  box-shadow: var(--ds-component-button-primary-shadow-focus);
 }
 
 /* ── Loading ───────────────────────────────────────────────────────────────── */
 
-.loading {
-  cursor: wait;
-}
-
-.loading .label {
-  opacity: 0.6;
-}
+.loading { cursor: wait; }
+.loading .label { opacity: 0.6; }
 
 /* ── Icons ─────────────────────────────────────────────────────────────────── */
 
@@ -172,7 +145,6 @@
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
-  /* Size relative to font-size so icons scale with button size */
   font-size: 1em;
   line-height: 1;
 }

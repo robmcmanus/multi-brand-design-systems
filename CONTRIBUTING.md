@@ -10,7 +10,7 @@ This repository is the source of truth for the tokens and components. Figma mirr
    npm install --legacy-peer-deps
    npm run tokens --workspace=packages/design-system
    ```
-3. Open a pull request using the template. The `build-tokens` check must pass before merge.
+3. Open a pull request using the template. The `build-tokens`, `typecheck` and `storybook-build` checks must pass before merge.
 4. After merge, update the matching Figma variables or components and note it in the pull request.
 
 ## Token rules

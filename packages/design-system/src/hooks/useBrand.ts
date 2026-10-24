@@ -5,14 +5,23 @@ export type Brand = '1' | '2' | '3'
 const STORAGE_KEY = 'ds-brand'
 const DEFAULT_BRAND: Brand = '1'
 
-function applyBrand(brand: Brand) {
+export type Theme = 'dark' | 'light'
+const THEME_KEY = 'ds-theme'
+
+function applyBrand(brand: Brand, theme: Theme) {
   document.documentElement.setAttribute('data-brand', brand)
+  // Only Brand 3 has a light theme. Dark is its default, so no attribute means dark.
+  if (brand === '3' && theme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light')
+  } else {
+    document.documentElement.removeAttribute('data-theme')
+  }
 }
 
 /**
  * useBrand — manages the active brand across the app.
  *
- * Sets data-brand on <html>, persists to localStorage,
+ * Sets data-brand (and, for Brand 3 light, data-theme) on <html>, persists to localStorage,
  * and syncs across tabs via the storage event.
  *
  * Usage:
@@ -24,17 +33,25 @@ export function useBrand() {
     return stored ?? DEFAULT_BRAND
   })
 
-  // Apply on mount and whenever brand changes
+  const [theme, setThemeState] = useState<Theme>(() =>
+    localStorage.getItem(THEME_KEY) === 'light' ? 'light' : 'dark'
+  )
+
+  // Apply on mount and whenever brand or theme changes
   useEffect(() => {
-    applyBrand(brand)
+    applyBrand(brand, theme)
     localStorage.setItem(STORAGE_KEY, brand)
-  }, [brand])
+    localStorage.setItem(THEME_KEY, theme)
+  }, [brand, theme])
 
   // Sync across tabs
   useEffect(() => {
     const handler = (e: StorageEvent) => {
       if (e.key === STORAGE_KEY && e.newValue) {
         setBrandState(e.newValue as Brand)
+      }
+      if (e.key === THEME_KEY && e.newValue) {
+        setThemeState(e.newValue === 'light' ? 'light' : 'dark')
       }
     }
     window.addEventListener('storage', handler)
@@ -45,5 +62,9 @@ export function useBrand() {
     setBrandState(next)
   }, [])
 
-  return { brand, setBrand }
+  const setTheme = useCallback((next: Theme) => {
+    setThemeState(next)
+  }, [])
+
+  return { brand, setBrand, theme, setTheme }
 }

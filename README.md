@@ -70,7 +70,11 @@ The token files in this repository are the source of truth. The Figma variables 
 
 ## Continuous integration
 
-Every push and pull request runs the token build (`.github/workflows/build-tokens.yml`). A broken token reference fails the run.
+Every push and pull request runs three checks. A failure on any of them blocks the merge.
+
+- `build-tokens` (`.github/workflows/build-tokens.yml`): builds the tokens. A broken token reference fails the run.
+- `typecheck` (`.github/workflows/ci.yml`): builds the tokens, then runs the TypeScript type check.
+- `storybook-build` (`.github/workflows/ci.yml`): builds Storybook, so every story has to compile.
 
 ## Contributing
 

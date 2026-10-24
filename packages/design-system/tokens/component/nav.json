@@ -21,7 +21,7 @@
         "foreground-active": { "$value": "{color.action.background}",     "$type": "color" },
         "background-hover":  { "$value": "{color.background.subtle}",     "$type": "color" },
         "background-active": { "$value": "{color.action.background-subtle}", "$type": "color" },
-        "border-radius":     { "$value": "{border-radius.md}",            "$type": "dimension" },
+        "border-radius":     { "$value": "{border-radius.control}",            "$type": "dimension" },
         "padding-x":         { "$value": "{spacing.component.75}",        "$type": "dimension" },
         "padding-y":         { "$value": "{spacing.component.50}",        "$type": "dimension" },
         "font-family":       { "$value": "{typography.font-family.base}",  "$type": "fontFamily" },
