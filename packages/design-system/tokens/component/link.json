@@ -17,7 +17,7 @@
       "transition-duration":  { "$value": "{motion.duration.fast}",            "$type": "duration" },
       "transition-easing":    { "$value": "{motion.easing.default}",           "$type": "cubicBezier" },
 
-      "icon-gap":             { "$value": "{spacing.component.xs}",            "$type": "dimension" },
+      "icon-gap":             { "$value": "{spacing.component.50}",            "$type": "dimension" },
       "icon-size":            { "$value": "{typography.size.sm}",              "$type": "dimension" }
     }
   }

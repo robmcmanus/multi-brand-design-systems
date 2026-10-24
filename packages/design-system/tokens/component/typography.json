@@ -87,7 +87,7 @@
         "font-family":    { "$value": "{typography.font-family.mono}",            "$type": "fontFamily" },
         "font-size":      { "$value": "{typography.size.sm}",                     "$type": "dimension" },
         "font-weight":    { "$value": "{typography.weight.body}",                 "$type": "fontWeight" },
-        "line-height":    { "$value": "{typography.line-height.relaxed}",          "$type": "number" },
+        "line-height":    { "$value": "{line-height.relaxed}",          "$type": "number" },
         "letter-spacing": { "$value": "{typography.letter-spacing.mono}",         "$type": "dimension" },
         "color":          { "$value": "{color.text.code}",                        "$type": "color" },
         "background":     { "$value": "{color.background.elevated}",              "$type": "color" }
@@ -97,7 +97,7 @@
         "font-size":      { "$value": "{typography.size.xs}",                     "$type": "dimension" },
         "font-weight":    { "$value": "{typography.weight.heading}",              "$type": "fontWeight" },
         "line-height":    { "$value": "{typography.line-height.label}",            "$type": "number" },
-        "letter-spacing": { "$value": "{typography.letter-spacing.widest}",       "$type": "dimension" },
+        "letter-spacing": { "$value": "{letter-spacing.widest}",       "$type": "dimension" },
         "color":          { "$value": "{color.text.tertiary}",                    "$type": "color" }
       }
     }

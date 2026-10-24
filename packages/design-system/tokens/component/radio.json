@@ -3,8 +3,8 @@
 
   "component": {
     "radio": {
-      "size":               { "$value": "{spacing.4}",                    "$type": "dimension", "$description": "16px outer ring" },
-      "dot-size":           { "$value": "{spacing.2}",                    "$type": "dimension", "$description": "8px inner dot" },
+      "size":               { "$value": "{spacing.100}",                    "$type": "dimension", "$description": "16px outer ring" },
+      "dot-size":           { "$value": "{spacing.50}",                    "$type": "dimension", "$description": "8px inner dot" },
 
       "border":             { "$value": "{color.border.default}",         "$type": "color" },
       "border-hover":       { "$value": "{color.border.strong}",          "$type": "color" },
@@ -27,7 +27,7 @@
       "label-color":        { "$value": "{color.text.primary}",           "$type": "color" },
       "label-color-disabled":{ "$value": "{color.text.disabled}",         "$type": "color" },
 
-      "gap":                { "$value": "{spacing.component.sm}",         "$type": "dimension" },
+      "gap":                { "$value": "{spacing.component.75}",         "$type": "dimension" },
       "transition-duration":{ "$value": "{motion.duration.fast}",         "$type": "duration" },
       "transition-easing":  { "$value": "{motion.easing.default}",        "$type": "cubicBezier" }
     }

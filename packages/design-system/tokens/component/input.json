@@ -20,14 +20,14 @@
       "border-width":          { "$value": "{border-width.1}",                  "$type": "dimension" },
       "border-radius":         { "$value": "{border-radius.md}",                "$type": "dimension" },
 
-      "padding-x":             { "$value": "{spacing.component.md}",            "$type": "dimension" },
-      "padding-y":             { "$value": "{spacing.component.sm}",            "$type": "dimension" },
-      "gap":                   { "$value": "{spacing.component.xs}",            "$type": "dimension" },
+      "padding-x":             { "$value": "{spacing.component.75}",            "$type": "dimension" },
+      "padding-y":             { "$value": "{spacing.component.75}",            "$type": "dimension" },
+      "gap":                   { "$value": "{spacing.component.50}",            "$type": "dimension" },
 
       "font-family":           { "$value": "{typography.font-family.base}",     "$type": "fontFamily" },
       "font-size":             { "$value": "{typography.size.md}",              "$type": "dimension" },
       "font-weight":           { "$value": "{typography.weight.body}",          "$type": "fontWeight" },
-      "line-height":           { "$value": "{typography.line-height.normal}",   "$type": "number" },
+      "line-height":           { "$value": "{line-height.normal}",   "$type": "number" },
 
       "shadow-focus":          { "$value": "{shadow.focus}",                    "$type": "shadow" },
       "transition-duration":   { "$value": "{motion.duration.fast}",            "$type": "duration" },
@@ -35,7 +35,7 @@
       "label-font-size":       { "$value": "{typography.size.sm}",              "$type": "dimension" },
       "label-font-weight":     { "$value": "{typography.weight.emphasis}",      "$type": "fontWeight" },
       "label-color":           { "$value": "{color.text.secondary}",            "$type": "color" },
-      "label-gap":             { "$value": "{spacing.component.xs}",            "$type": "dimension" },
+      "label-gap":             { "$value": "{spacing.component.50}",            "$type": "dimension" },
 
       "helper-font-size":      { "$value": "{typography.size.xs}",              "$type": "dimension" },
       "helper-color":          { "$value": "{color.text.tertiary}",             "$type": "color" },

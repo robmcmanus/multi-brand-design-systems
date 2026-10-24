@@ -13,8 +13,8 @@
         "border":              { "$value": "{color.action.border}",              "$type": "color" },
         "border-width":        { "$value": "{border-width.1}",                   "$type": "dimension" },
         "border-radius":       { "$value": "{border-radius.md}",                 "$type": "dimension" },
-        "padding-x":           { "$value": "{spacing.component.lg}",             "$type": "dimension" },
-        "padding-y":           { "$value": "{spacing.component.sm}",             "$type": "dimension" },
+        "padding-x":           { "$value": "{spacing.component.100}",             "$type": "dimension" },
+        "padding-y":           { "$value": "{spacing.component.75}",             "$type": "dimension" },
         "font-family":         { "$value": "{typography.font-family.base}",      "$type": "fontFamily" },
         "font-size":           { "$value": "{typography.size.md}",               "$type": "dimension" },
         "font-weight":         { "$value": "{typography.weight.emphasis}",       "$type": "fontWeight" },
@@ -34,8 +34,8 @@
         "border-hover":        { "$value": "{color.action.border-hover}",        "$type": "color" },
         "border-width":        { "$value": "{border-width.1}",                   "$type": "dimension" },
         "border-radius":       { "$value": "{border-radius.md}",                 "$type": "dimension" },
-        "padding-x":           { "$value": "{spacing.component.lg}",             "$type": "dimension" },
-        "padding-y":           { "$value": "{spacing.component.sm}",             "$type": "dimension" },
+        "padding-x":           { "$value": "{spacing.component.100}",             "$type": "dimension" },
+        "padding-y":           { "$value": "{spacing.component.75}",             "$type": "dimension" },
         "font-family":         { "$value": "{typography.font-family.base}",      "$type": "fontFamily" },
         "font-size":           { "$value": "{typography.size.md}",               "$type": "dimension" },
         "font-weight":         { "$value": "{typography.weight.emphasis}",       "$type": "fontWeight" },
@@ -51,8 +51,8 @@
         "border":              { "$value": "{color.background.canvas}",          "$type": "color" },
         "border-width":        { "$value": "{border-width.0}",                   "$type": "dimension" },
         "border-radius":       { "$value": "{border-radius.md}",                 "$type": "dimension" },
-        "padding-x":           { "$value": "{spacing.component.lg}",             "$type": "dimension" },
-        "padding-y":           { "$value": "{spacing.component.sm}",             "$type": "dimension" },
+        "padding-x":           { "$value": "{spacing.component.100}",             "$type": "dimension" },
+        "padding-y":           { "$value": "{spacing.component.75}",             "$type": "dimension" },
         "font-family":         { "$value": "{typography.font-family.base}",      "$type": "fontFamily" },
         "font-size":           { "$value": "{typography.size.md}",               "$type": "dimension" },
         "font-weight":         { "$value": "{typography.weight.emphasis}",       "$type": "fontWeight" },
@@ -65,21 +65,21 @@
         "border":              { "$value": "{color.feedback.error.border}",      "$type": "color" },
         "border-width":        { "$value": "{border-width.1}",                   "$type": "dimension" },
         "border-radius":       { "$value": "{border-radius.md}",                 "$type": "dimension" },
-        "padding-x":           { "$value": "{spacing.component.lg}",             "$type": "dimension" },
-        "padding-y":           { "$value": "{spacing.component.sm}",             "$type": "dimension" },
+        "padding-x":           { "$value": "{spacing.component.100}",             "$type": "dimension" },
+        "padding-y":           { "$value": "{spacing.component.75}",             "$type": "dimension" },
         "font-family":         { "$value": "{typography.font-family.base}",      "$type": "fontFamily" },
         "font-size":           { "$value": "{typography.size.md}",               "$type": "dimension" },
         "font-weight":         { "$value": "{typography.weight.emphasis}",       "$type": "fontWeight" }
       },
       "size": {
         "sm": {
-          "padding-x":  { "$value": "{spacing.component.md}", "$type": "dimension" },
-          "padding-y":  { "$value": "{spacing.component.xs}", "$type": "dimension" },
+          "padding-x":  { "$value": "{spacing.component.75}", "$type": "dimension" },
+          "padding-y":  { "$value": "{spacing.component.50}", "$type": "dimension" },
           "font-size":  { "$value": "{typography.size.sm}",   "$type": "dimension" }
         },
         "lg": {
-          "padding-x":  { "$value": "{spacing.component.xl}", "$type": "dimension" },
-          "padding-y":  { "$value": "{spacing.component.md}", "$type": "dimension" },
+          "padding-x":  { "$value": "{spacing.component.150}", "$type": "dimension" },
+          "padding-y":  { "$value": "{spacing.component.75}", "$type": "dimension" },
           "font-size":  { "$value": "{typography.size.lg}",   "$type": "dimension" }
         }
       }

@@ -12,8 +12,8 @@
       "shadow":           { "$value": "{shadow.sm}",                   "$type": "shadow" },
       "shadow-hover":     { "$value": "{shadow.md}",                   "$type": "shadow" },
 
-      "padding":          { "$value": "{spacing.component.xl}",        "$type": "dimension" },
-      "gap":              { "$value": "{spacing.component.md}",        "$type": "dimension" },
+      "padding":          { "$value": "{spacing.component.150}",        "$type": "dimension" },
+      "gap":              { "$value": "{spacing.component.75}",        "$type": "dimension" },
 
       "title-font-family":  { "$value": "{typography.font-family.display}", "$type": "fontFamily" },
       "title-font-size":    { "$value": "{typography.size.lg}",             "$type": "dimension" },
