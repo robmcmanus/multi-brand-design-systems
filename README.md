@@ -72,6 +72,10 @@ The token files in this repository are the source of truth. The Figma variables 
 
 Every push and pull request runs the token build (`.github/workflows/build-tokens.yml`). A broken token reference fails the run.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, token rules and component rules.
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE).

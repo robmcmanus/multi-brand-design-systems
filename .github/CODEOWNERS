@@ -1,0 +1,6 @@
+# Every change is reviewed by the maintainer.
+* @robmcmanus
+
+# Tokens and the build that produces them
+/packages/design-system/tokens/ @robmcmanus
+/packages/design-system/build-tokens.mjs @robmcmanus
