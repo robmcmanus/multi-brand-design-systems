@@ -72,7 +72,7 @@ Files: `semantic/brand-{n}.json`
 
 | Group | Purpose |
 |---|---|
-| `border-radius.*` | sm, md, lg, xl, full — brands vary dramatically here |
+| `border-radius.*` | none, xs, sm, md, lg, xl, full — brands vary dramatically here |
 | `shadow.*` | sm, md, lg (+ brand-specific extras e.g. glow) |
 | `motion.*` | duration.fast/normal/slow, easing.default/spring |
 | `spacing.component.*` | xs → 2xl — internal component padding/gap |

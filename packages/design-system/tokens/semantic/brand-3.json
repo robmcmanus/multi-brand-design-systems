@@ -105,6 +105,8 @@
   },
 
   "border-radius": {
+    "none": { "$value": "{radius.none}", "$type": "dimension", "$description": "0px — square corners" },
+    "xs":   { "$value": "{radius.1}",    "$type": "dimension", "$description": "2px — very small radius" },
     "sm":   { "$value": "{radius.1}",    "$type": "dimension", "$description": "2px — sharp, precise" },
     "md":   { "$value": "{radius.2}",    "$type": "dimension", "$description": "4px — buttons, inputs" },
     "lg":   { "$value": "{radius.2}",    "$type": "dimension", "$description": "4px — panels" },
