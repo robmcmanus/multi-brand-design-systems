@@ -1,5 +1,5 @@
 {
-  "$description": "Brand 2 semantic tokens — Movie-finding app. Light mode default (cream canvas). Dark mode overrides in brand-2-dark.json. Yellow CTA, red accent, blue secondary.",
+  "$description": "Brand 2 semantic tokens — Movie-finding app. Light mode only (cream canvas). Yellow CTA, red accent, blue secondary.",
 
   "color": {
     "background": {

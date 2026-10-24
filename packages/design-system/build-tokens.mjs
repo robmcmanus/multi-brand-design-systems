@@ -6,9 +6,11 @@
  *   build/css/brand-1.css     — [data-brand="1"] { semantic tokens }
  *   build/css/brand-2.css     — [data-brand="2"] { semantic tokens }
  *   build/css/brand-3.css     — [data-brand="3"] { semantic tokens }
+ *   build/css/brand-3-dark.css — [data-brand="3"][data-theme="dark"] { colour + shadow overrides }
  *   build/css/components.css  — :root { component tokens using var() references }
  *
  * Brand switching: set data-brand="1|2|3" on <html> or <body>.
+ * Dark mode (Brand 3 only): also set data-theme="dark".
  * All brand files are loaded simultaneously; cascade does the rest.
  */
 
@@ -79,6 +81,47 @@ for (const brand of BRANDS) {
   await sd.buildAllPlatforms()
 }
 
+// ─── Dark mode overrides ──────────────────────────────────────────────────────
+//
+// Only Brand 3 has a dark mode. brand-3-dark.json holds colour and shadow
+// overrides. The base file is included so SD can resolve references; only the
+// dark file's own tokens are output. The attribute selector is more specific
+// than [data-brand="3"], so dark values win when data-theme="dark" is set.
+
+const DARK_BRANDS = ['3']
+
+for (const brand of DARK_BRANDS) {
+  const sd = new StyleDictionary({
+    include: [
+      'tokens/primitives/global.json',
+      `tokens/primitives/brand-${brand}.json`,
+      `tokens/semantic/brand-${brand}.json`,
+    ],
+    source: [`tokens/semantic/brand-${brand}-dark.json`],
+    platforms: {
+      css: {
+        transformGroup: 'css',
+        prefix: PREFIX,
+        buildPath: BUILD_PATH,
+        files: [
+          {
+            destination: `brand-${brand}-dark.css`,
+            format: 'css/variables',
+            filter: (token) =>
+              token.filePath === `tokens/semantic/brand-${brand}-dark.json`,
+            options: {
+              selector: `[data-brand="${brand}"][data-theme="dark"]`,
+              outputReferences: false,
+            },
+          },
+        ],
+      },
+    },
+  })
+
+  await sd.buildAllPlatforms()
+}
+
 // ─── Component tokens ─────────────────────────────────────────────────────────
 //
 // Components reference semantic tokens (e.g. {color.action.background}).
@@ -116,4 +159,4 @@ const componentSD = new StyleDictionary({
 await componentSD.buildAllPlatforms()
 
 console.log('\n✓ Token build complete → build/css/')
-console.log('  global.css, brand-1.css, brand-2.css, brand-3.css, components.css\n')
+console.log('  global.css, brand-1.css, brand-2.css, brand-3.css, brand-3-dark.css, components.css\n')

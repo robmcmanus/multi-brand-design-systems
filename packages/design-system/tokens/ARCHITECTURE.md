@@ -152,12 +152,12 @@ All brand CSS files are loaded simultaneously. The `data-brand` attribute determ
 
 | | Brand 1 | Brand 2 | Brand 3 |
 |---|---|---|---|
-| **Archetype** | Dev tool, optimistic | Consumer wellness, extreme | Enterprise B2B, extreme |
-| **Mode** | Dark | Light | Light |
-| **Accent** | Amber / gold | Sage + terracotta | Corporate blue |
-| **Type — UI** | Inter + JetBrains Mono | DM Sans | IBM Plex Sans |
-| **Type — display** | JetBrains Mono | Playfair Display | IBM Plex Sans |
-| **Type — body** | Inter | Lora (serif) | IBM Plex Sans |
-| **Radius** | Sharp (2–8px) | Very rounded (16–32px, pill) | None to minimal (0–4px) |
-| **Density** | Moderate | Spacious, editorial | Dense, utilitarian |
-| **Shadows** | Dark + amber glow | Soft, warm | None or flat border |
+| **Archetype** | Portfolio / Folio site | Movie-finding app | Internal tools / sci-fi HUD |
+| **Mode** | Light | Light only | Light default, dark mode |
+| **Accent** | Indigo | Yellow CTA, red accent, blue secondary | Cyan, electric purple secondary |
+| **Type — UI** | Inter | DM Sans | Space Grotesk |
+| **Type — display** | Inter | Barlow Condensed | Space Grotesk |
+| **Type — mono** | JetBrains Mono | DM Mono | JetBrains Mono |
+| **Control radius** | Square (0px) | 6px | 4px |
+| **Container radius** | 8px | 8px | 4px |
+| **Shadows** | Soft, cool | Soft, warm | Soft in light, cyan glow |
