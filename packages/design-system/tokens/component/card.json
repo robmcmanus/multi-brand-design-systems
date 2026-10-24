@@ -8,7 +8,7 @@
       "border":           { "$value": "{color.border.subtle}",         "$type": "color" },
       "border-hover":     { "$value": "{color.border.default}",        "$type": "color" },
       "border-width":     { "$value": "{border-width.1}",              "$type": "dimension" },
-      "border-radius":    { "$value": "{border-radius.lg}",            "$type": "dimension" },
+      "border-radius":    { "$value": "{border-radius.container}",            "$type": "dimension" },
       "shadow":           { "$value": "{shadow.sm}",                   "$type": "shadow" },
       "shadow-hover":     { "$value": "{shadow.md}",                   "$type": "shadow" },
 

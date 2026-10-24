@@ -126,7 +126,8 @@
     "lg":   { "$value": "{radius.4}",    "$type": "dimension", "$description": "8px — cards" },
     "xl":   { "$value": "{radius.6}",    "$type": "dimension", "$description": "12px — modals, posters" },
     "full": { "$value": "{radius.full}", "$type": "dimension" },
-    "control": { "$value": "{radius.3}", "$type": "dimension", "$description": "6px — corner radius for interactive controls (buttons, text fields, dropdowns, tabs)" }
+    "control": { "$value": "{radius.3}", "$type": "dimension", "$description": "6px — corner radius for interactive controls (buttons, text fields, dropdowns, tabs)" },
+    "container": { "$value": "{radius.4}", "$type": "dimension", "$description": "8px — corner radius for containers (cards, modals, panels)" }
   },
 
   "shadow": {

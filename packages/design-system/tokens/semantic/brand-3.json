@@ -112,7 +112,8 @@
     "lg":   { "$value": "{radius.2}",    "$type": "dimension", "$description": "4px — panels" },
     "xl":   { "$value": "{radius.3}",    "$type": "dimension", "$description": "6px — modals" },
     "full": { "$value": "{radius.full}", "$type": "dimension" },
-    "control": { "$value": "{radius.2}", "$type": "dimension", "$description": "4px — corner radius for interactive controls (buttons, text fields, dropdowns, tabs)" }
+    "control": { "$value": "{radius.2}", "$type": "dimension", "$description": "4px — corner radius for interactive controls (buttons, text fields, dropdowns, tabs)" },
+    "container": { "$value": "{radius.2}", "$type": "dimension", "$description": "4px — corner radius for containers (cards, modals, panels)" }
   },
 
   "shadow": {
