@@ -18,7 +18,7 @@
       "border-error":          { "$value": "{color.feedback.error.border}",     "$type": "color" },
       "border-disabled":       { "$value": "{color.border.subtle}",             "$type": "color" },
       "border-width":          { "$value": "{border-width.1}",                  "$type": "dimension" },
-      "border-radius":         { "$value": "{border-radius.md}",                "$type": "dimension" },
+      "border-radius":         { "$value": "{border-radius.control}",                "$type": "dimension" },
 
       "padding-x":             { "$value": "{spacing.component.75}",            "$type": "dimension" },
       "padding-y":             { "$value": "{spacing.component.75}",            "$type": "dimension" },

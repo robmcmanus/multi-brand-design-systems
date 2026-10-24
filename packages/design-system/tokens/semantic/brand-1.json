@@ -111,7 +111,8 @@
     "md":   { "$value": "{radius.3}",    "$type": "dimension", "$description": "6px — buttons, cards" },
     "lg":   { "$value": "{radius.4}",    "$type": "dimension", "$description": "8px — modals, panels" },
     "xl":   { "$value": "{radius.6}",    "$type": "dimension", "$description": "12px — large cards" },
-    "full": { "$value": "{radius.full}", "$type": "dimension" }
+    "full": { "$value": "{radius.full}", "$type": "dimension" },
+    "control": { "$value": "{radius.none}", "$type": "dimension", "$description": "0px — corner radius for interactive controls (buttons, text fields, dropdowns, tabs); square in Brand 1" }
   },
 
   "shadow": {
