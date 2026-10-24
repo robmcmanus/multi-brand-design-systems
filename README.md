@@ -76,6 +76,12 @@ Every push and pull request runs three checks. A failure on any of them blocks t
 - `typecheck` (`.github/workflows/ci.yml`): builds the tokens, then runs the TypeScript type check.
 - `storybook-build` (`.github/workflows/ci.yml`): builds Storybook, so every story has to compile.
 
+## Storybook
+
+Storybook is deployed to GitHub Pages on every push to `main`: https://robmcmanus.github.io/multi-brand-design-systems/
+
+Run it locally with `npm run storybook --workspace=packages/design-system`.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, token rules and component rules.
