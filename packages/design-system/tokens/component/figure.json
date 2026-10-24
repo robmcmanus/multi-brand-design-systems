@@ -1,0 +1,55 @@
+{
+  "$description": "Figure with caption tokens \u2014 image or prototype embed.",
+  "component": {
+    "figure": {
+      "background": {
+        "$value": "{color.background.subtle}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border.subtle}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "{border-width.1}",
+        "$type": "dimension"
+      },
+      "gap": {
+        "$value": "{spacing.component.75}",
+        "$type": "dimension"
+      },
+      "caption-foreground": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "caption-font-size": {
+        "$value": "{typography.size.sm}",
+        "$type": "dimension"
+      },
+      "enlarge-background": {
+        "$value": "{color.background.elevated}",
+        "$type": "color"
+      },
+      "enlarge-border": {
+        "$value": "{color.border.default}",
+        "$type": "color"
+      },
+      "enlarge-border-radius": {
+        "$value": "{border-radius.control}",
+        "$type": "dimension"
+      },
+      "overlay": {
+        "$value": "{color.background.overlay}",
+        "$type": "color"
+      },
+      "overlay-padding": {
+        "$value": "{spacing.component.200}",
+        "$type": "dimension"
+      },
+      "overlay-caption-foreground": {
+        "$value": "{color.text.inverse}",
+        "$type": "color"
+      }
+    }
+  }
+}

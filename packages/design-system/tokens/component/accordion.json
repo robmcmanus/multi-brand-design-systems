@@ -1,0 +1,63 @@
+{
+  "$description": "Accordion component tokens.",
+  "component": {
+    "accordion": {
+      "border": {
+        "$value": "{color.border.default}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "{border-width.1}",
+        "$type": "dimension"
+      },
+      "padding-y": {
+        "$value": "{spacing.component.100}",
+        "$type": "dimension"
+      },
+      "gap": {
+        "$value": "{spacing.component.75}",
+        "$type": "dimension"
+      },
+      "title-foreground": {
+        "$value": "{color.text.primary}",
+        "$type": "color"
+      },
+      "title-foreground-disabled": {
+        "$value": "{color.text.disabled}",
+        "$type": "color"
+      },
+      "title-font-size": {
+        "$value": "{typography.size.lg}",
+        "$type": "dimension"
+      },
+      "title-font-weight": {
+        "$value": "{typography.weight.emphasis}",
+        "$type": "fontWeight"
+      },
+      "content-foreground": {
+        "$value": "{color.text.secondary}",
+        "$type": "color"
+      },
+      "background-hover": {
+        "$value": "{color.background.subtle}",
+        "$type": "color"
+      },
+      "focus-ring": {
+        "$value": "{color.border.focus}",
+        "$type": "color"
+      },
+      "icon-size": {
+        "$value": "{typography.size.lg}",
+        "$type": "dimension"
+      },
+      "transition-duration": {
+        "$value": "{motion.duration.fast}",
+        "$type": "duration"
+      },
+      "transition-easing": {
+        "$value": "{motion.easing.default}",
+        "$type": "cubicBezier"
+      }
+    }
+  }
+}

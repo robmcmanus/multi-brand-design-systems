@@ -1,0 +1,51 @@
+{
+  "$description": "Case study metadata (definition list) tokens.",
+  "component": {
+    "case-study-metadata": {
+      "border": {
+        "$value": "{color.border.emphasis}",
+        "$type": "color"
+      },
+      "border-width": {
+        "$value": "{border-width.1}",
+        "$type": "dimension"
+      },
+      "padding-y": {
+        "$value": "{spacing.component.100}",
+        "$type": "dimension"
+      },
+      "gap": {
+        "$value": "{spacing.component.150}",
+        "$type": "dimension"
+      },
+      "item-gap": {
+        "$value": "{spacing.component.25}",
+        "$type": "dimension"
+      },
+      "term-foreground": {
+        "$value": "{color.text.tertiary}",
+        "$type": "color"
+      },
+      "term-font-size": {
+        "$value": "{typography.size.xs}",
+        "$type": "dimension"
+      },
+      "term-font-weight": {
+        "$value": "{typography.weight.heading}",
+        "$type": "fontWeight"
+      },
+      "term-letter-spacing": {
+        "$value": "{typography.letter-spacing.label}",
+        "$type": "dimension"
+      },
+      "definition-foreground": {
+        "$value": "{color.text.primary}",
+        "$type": "color"
+      },
+      "definition-font-size": {
+        "$value": "{typography.size.md}",
+        "$type": "dimension"
+      }
+    }
+  }
+}

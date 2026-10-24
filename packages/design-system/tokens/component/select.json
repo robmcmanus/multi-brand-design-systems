@@ -1,0 +1,67 @@
+{
+  "$description": "Select menu and option tokens. The closed select reuses the input tokens.",
+  "component": {
+    "select": {
+      "menu": {
+        "background": {
+          "$value": "{color.background.elevated}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{color.border.default}",
+          "$type": "color"
+        },
+        "border-width": {
+          "$value": "{border-width.1}",
+          "$type": "dimension"
+        },
+        "border-radius": {
+          "$value": "{border-radius.control}",
+          "$type": "dimension"
+        },
+        "shadow": {
+          "$value": "{shadow.md}",
+          "$type": "shadow"
+        }
+      },
+      "option": {
+        "foreground": {
+          "$value": "{color.text.primary}",
+          "$type": "color"
+        },
+        "foreground-disabled": {
+          "$value": "{color.text.disabled}",
+          "$type": "color"
+        },
+        "background-hover": {
+          "$value": "{color.background.subtle}",
+          "$type": "color"
+        },
+        "background-selected": {
+          "$value": "{color.action.background-subtle}",
+          "$type": "color"
+        },
+        "focus-ring": {
+          "$value": "{color.border.focus}",
+          "$type": "color"
+        },
+        "padding-x": {
+          "$value": "{spacing.component.75}",
+          "$type": "dimension"
+        },
+        "padding-y": {
+          "$value": "{spacing.component.75}",
+          "$type": "dimension"
+        },
+        "font-size": {
+          "$value": "{typography.size.md}",
+          "$type": "dimension"
+        },
+        "font-weight-selected": {
+          "$value": "{typography.weight.heading}",
+          "$type": "fontWeight"
+        }
+      }
+    }
+  }
+}
