@@ -66,8 +66,8 @@
   },
 
   "font-family": {
-    "display": { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily", "$description": "Technical geometric — headers, labels" },
-    "sans":    { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily" },
-    "mono":    { "$value": "'JetBrains Mono', 'Space Mono', 'Courier New', monospace", "$type": "fontFamily", "$description": "Data, code, HUD readouts" }
+    "display": { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily", "$description": "Technical geometric — headers, labels", "$extensions": { "figma": { "fontFamily": "Space Grotesk" } } },
+    "sans":    { "$value": "'Space Grotesk', 'Inter', system-ui, sans-serif",      "$type": "fontFamily", "$extensions": { "figma": { "fontFamily": "Space Grotesk" } } },
+    "mono":    { "$value": "'JetBrains Mono', 'Space Mono', 'Courier New', monospace", "$type": "fontFamily", "$description": "Data, code, HUD readouts", "$extensions": { "figma": { "fontFamily": "JetBrains Mono" } } }
   }
 }

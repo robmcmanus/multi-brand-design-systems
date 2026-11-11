@@ -52,8 +52,8 @@
   },
 
   "font-family": {
-    "sans":    { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily" },
-    "mono":    { "$value": "'JetBrains Mono', 'Fira Code', monospace",               "$type": "fontFamily" },
-    "display": { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily" }
+    "sans":    { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily", "$extensions": { "figma": { "fontFamily": "Inter" } } },
+    "mono":    { "$value": "'JetBrains Mono', 'Fira Code', monospace",               "$type": "fontFamily", "$extensions": { "figma": { "fontFamily": "JetBrains Mono" } } },
+    "display": { "$value": "'Inter', 'Helvetica Neue', Arial, system-ui, sans-serif", "$type": "fontFamily", "$extensions": { "figma": { "fontFamily": "Inter" } } }
   }
 }
