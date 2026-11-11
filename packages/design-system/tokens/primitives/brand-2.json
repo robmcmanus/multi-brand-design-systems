@@ -58,8 +58,8 @@
   },
 
   "font-family": {
-    "display": { "$value": "'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif", "$type": "fontFamily", "$description": "Bold condensed — movie titles, hero text, poster energy" },
-    "sans":    { "$value": "'DM Sans', 'Helvetica Neue', system-ui, sans-serif",       "$type": "fontFamily", "$description": "Clean consumer UI" },
-    "mono":    { "$value": "'DM Mono', 'Courier New', monospace",                      "$type": "fontFamily" }
+    "display": { "$value": "'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif", "$type": "fontFamily", "$description": "Bold condensed — movie titles, hero text, poster energy", "$extensions": { "figma": { "fontFamily": "Barlow Condensed" } } },
+    "sans":    { "$value": "'DM Sans', 'Helvetica Neue', system-ui, sans-serif",       "$type": "fontFamily", "$description": "Clean consumer UI", "$extensions": { "figma": { "fontFamily": "DM Sans" } } },
+    "mono":    { "$value": "'DM Mono', 'Courier New', monospace",                      "$type": "fontFamily", "$extensions": { "figma": { "fontFamily": "DM Mono" } } }
   }
 }

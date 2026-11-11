@@ -3,7 +3,7 @@
   "component": {
     "badge": {
       "border-radius": {
-        "$value": "{border-radius.full}",
+        "$value": "{border-radius.pill}",
         "$type": "dimension"
       },
       "padding-x": {
