@@ -23,14 +23,16 @@
 }
 
 /* ── Sizes (md is the base, set on each variant below) ─────────────────────── */
+/* .button.sm / .button.lg outrank the single-class variant rules, which also set
+   padding and font-size and come later in the file. */
 
-.sm {
+.button.sm {
   padding-block: var(--ds-component-button-size-sm-padding-y);
   padding-inline: var(--ds-component-button-size-sm-padding-x);
   font-size: var(--ds-component-button-size-sm-font-size);
 }
 
-.lg {
+.button.lg {
   padding-block: var(--ds-component-button-size-lg-padding-y);
   padding-inline: var(--ds-component-button-size-lg-padding-x);
   font-size: var(--ds-component-button-size-lg-font-size);
