@@ -133,6 +133,33 @@
   box-shadow: var(--ds-component-button-primary-shadow-focus);
 }
 
+/* ── Underline on hover (all brands) ───────────────────────────────────────────── */
+
+/* Underline sits on the label only, so icons are never underlined */
+.button .label {
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color var(--ds-component-button-primary-transition-duration)
+    var(--ds-component-button-primary-transition-easing);
+}
+
+.button:hover:not(:disabled) .label,
+.button:focus-visible:not(:disabled) .label {
+  text-decoration-color: currentColor;
+}
+
+/* No underline when disabled or loading */
+.button:disabled .label,
+.loading .label {
+  text-decoration-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button .label { transition: none; }
+}
+
 /* ── Loading ───────────────────────────────────────────────────────────────── */
 
 .loading { cursor: wait; }
