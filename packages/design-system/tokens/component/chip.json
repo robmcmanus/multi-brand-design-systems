@@ -1,0 +1,45 @@
+{
+  "$description": "Selection (filter) chip. Follows Material 3 filter chip anatomy: 32px container, 1px outline when unselected, filled when selected with a leading checkmark, Label Large type. Toggles on click; expose as aria-pressed or role=option in a listbox. Keep a 48px touch target in code even though the visual is 32px.",
+
+  "component": {
+    "chip": {
+      "height":          { "$value": "{spacing.200}",                  "$type": "dimension", "$description": "32px container" },
+      "padding-x":       { "$value": "{spacing.component.75}",         "$type": "dimension", "$description": "Label-only leading and trailing space" },
+      "padding-x-icon":  { "$value": "{spacing.component.50}",         "$type": "dimension", "$description": "Leading space when an icon or checkmark is shown" },
+      "gap":             { "$value": "{spacing.component.50}",         "$type": "dimension" },
+      "icon-size":       { "$value": "{typography.size.lg}",           "$type": "dimension", "$description": "18px leading icon / checkmark" },
+      "border-radius":   { "$value": "{border-radius.pill}",           "$type": "dimension" },
+      "border-width":    { "$value": "{border-width.1}",               "$type": "dimension" },
+      "font-family":     { "$value": "{typography.font-family.base}",  "$type": "fontFamily" },
+      "font-size":       { "$value": "{typography.size.sm}",           "$type": "dimension" },
+      "font-weight":     { "$value": "{typography.weight.emphasis}",   "$type": "fontWeight" },
+      "letter-spacing":  { "$value": "{typography.letter-spacing.label}", "$type": "dimension" },
+      "transition-duration": { "$value": "{motion.duration.fast}",     "$type": "duration" },
+      "transition-easing":   { "$value": "{motion.easing.default}",    "$type": "cubicBezier" },
+
+      "unselected": {
+        "background":          { "$value": "{color.background.canvas}", "$type": "color" },
+        "background-hover":    { "$value": "{color.background.subtle}", "$type": "color" },
+        "background-pressed":  { "$value": "{color.background.subtle}", "$type": "color" },
+        "background-disabled": { "$value": "{color.background.canvas}", "$type": "color" },
+        "foreground":          { "$value": "{color.text.primary}",      "$type": "color" },
+        "foreground-disabled": { "$value": "{color.text.disabled}",     "$type": "color" },
+        "border":              { "$value": "{color.border.strong}",     "$type": "color" },
+        "border-pressed":      { "$value": "{color.border.emphasis}",   "$type": "color" },
+        "border-disabled":     { "$value": "{color.border.subtle}",     "$type": "color" },
+        "icon":                { "$value": "{color.text.secondary}",    "$type": "color" }
+      },
+
+      "selected": {
+        "background":          { "$value": "{color.action.background}",          "$type": "color" },
+        "background-hover":    { "$value": "{color.action.background-hover}",    "$type": "color" },
+        "background-pressed":  { "$value": "{color.action.background-active}",   "$type": "color" },
+        "background-disabled": { "$value": "{color.action.background-disabled}", "$type": "color" },
+        "foreground":          { "$value": "{color.action.foreground}",          "$type": "color" },
+        "foreground-disabled": { "$value": "{color.action.foreground-disabled}", "$type": "color" },
+        "border":              { "$value": "{color.action.border}",              "$type": "color" },
+        "border-disabled":     { "$value": "{color.action.background-disabled}", "$type": "color" }
+      }
+    }
+  }
+}
